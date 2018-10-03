@@ -1,0 +1,2 @@
+# Algorithm
+Record algorithm solutions
