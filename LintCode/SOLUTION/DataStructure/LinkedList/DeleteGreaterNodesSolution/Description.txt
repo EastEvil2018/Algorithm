@@ -1,0 +1,6 @@
+@param
+head : The head of a Linked List
+val : An Integer
+
+@function
+Delete all the nodes which value is greater than val, return the head of the modified linked list.
