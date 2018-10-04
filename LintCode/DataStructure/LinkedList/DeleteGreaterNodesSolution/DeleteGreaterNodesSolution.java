@@ -19,6 +19,8 @@ public class DeleteGreaterNodesSolution extends Solution {
 
         PrintUtills.printLinkedList(head);
 
+        System.out.println("\nThe value : " + x);
+
         head = deleteGreaterNodes(head, x);
 
         System.out.println("\nAfter Testing:\n");
