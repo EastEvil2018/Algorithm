@@ -55,6 +55,11 @@ public class SharedInterestsSolution implements Solution {
         // Here we should show some descriptions for this problem
     }
 
+    public void explain()
+    {
+        // Here we should explain the solution
+    }
+
     public int sharedInterets(int numOfNodes, List<Integer> from, List<Integer> to, List<Integer> weights)
     {
 

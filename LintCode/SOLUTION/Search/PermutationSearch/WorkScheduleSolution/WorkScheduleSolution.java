@@ -26,6 +26,11 @@ public class WorkScheduleSolution implements Solution {
         // Here we should show some descriptions for this problem
     }
 
+    public void explain()
+    {
+        // Here we should explain the solution
+    }
+
     public List<String> workSchedule(String candidate, int dailyMaxHours, int weeklyMaxHours)
     {
         List<String> result = new ArrayList<>();

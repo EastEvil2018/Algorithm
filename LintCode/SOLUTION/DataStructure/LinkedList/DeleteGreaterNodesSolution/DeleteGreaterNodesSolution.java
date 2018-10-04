@@ -25,6 +25,11 @@ public class DeleteGreaterNodesSolution implements Solution {
         // Here we should show some descriptions for this problem
     }
 
+    public void explain()
+    {
+        // Here we should explain the solution
+    }
+
     public Node deleteGreaterNodes(Node head, int val)
     {
         Node temp = head;

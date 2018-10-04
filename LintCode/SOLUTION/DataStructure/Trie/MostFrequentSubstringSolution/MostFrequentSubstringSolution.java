@@ -24,6 +24,11 @@ public class MostFrequentSubstringSolution implements Solution {
         // Here we should show some descriptions for this problem
     }
 
+    public void explain()
+    {
+        // Here we should explain the solution
+    }
+
     Trie root = new Trie();
 
     int maxFrequency = 0;
