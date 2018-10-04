@@ -1,4 +1,4 @@
-package LintCode.SOLUTION;
+package Algorithm.LintCode.SOLUTION;
 
 public interface Solution {
     void run();

@@ -1,9 +1,9 @@
-package LintCode.SOLUTION.DataStructure.LinkedList.DeleteGreaterNodesSolution;
+package Algorithm.LintCode.SOLUTION.DataStructure.LinkedList.DeleteGreaterNodesSolution;
 
-import LintCode.PUBLIC_DATA_STRUCTURE.Node;
-import LintCode.SOLUTION.Solution;
-import LintCode.UTILLS.ConstructUtills;
-import LintCode.UTILLS.PrintUtills;
+import Algorithm.LintCode.PUBLIC_DATA_STRUCTURE.Node;
+import Algorithm.LintCode.SOLUTION.Solution;
+import Algorithm.LintCode.UTILLS.ConstructUtills;
+import Algorithm.LintCode.UTILLS.PrintUtills;
 
 public class DeleteGreaterNodesSolution implements Solution {
 

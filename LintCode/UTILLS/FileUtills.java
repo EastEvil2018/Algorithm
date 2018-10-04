@@ -1,4 +1,4 @@
-package LintCode.UTILLS;
+package Algorithm.LintCode.UTILLS;
 
 public class FileUtills {
 

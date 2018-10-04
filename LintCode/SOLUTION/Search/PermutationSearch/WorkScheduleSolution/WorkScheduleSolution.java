@@ -1,6 +1,6 @@
-package LintCode.SOLUTION.Search.PermutationSearch.WorkScheduleSolution;
+package Algorithm.LintCode.SOLUTION.Search.PermutationSearch.WorkScheduleSolution;
 
-import LintCode.SOLUTION.Solution;
+import Algorithm.LintCode.SOLUTION.Solution;
 
 import java.util.ArrayList;
 import java.util.List;

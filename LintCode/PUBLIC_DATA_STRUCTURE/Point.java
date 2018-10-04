@@ -1,4 +1,4 @@
-package LintCode.PUBLIC_DATA_STRUCTURE;
+package Algorithm.LintCode.PUBLIC_DATA_STRUCTURE;
 
 //Definition for a point.
 public class Point {

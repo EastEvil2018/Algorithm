@@ -1,6 +1,6 @@
-package LintCode.UTILLS;
+package Algorithm.LintCode.UTILLS;
 
-import LintCode.PUBLIC_DATA_STRUCTURE.Node;
+import Algorithm.LintCode.PUBLIC_DATA_STRUCTURE.Node;
 
 public class PrintUtills {
 
