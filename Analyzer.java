@@ -48,9 +48,9 @@ public class Analyzer {
 
         Iterating over the whole linked list, keep track on the curNode and previous Node.
 
-                If curNode.val > val, connect previousNode to curNode.next, continue, until curNode == null.
+        If curNode.val > val, connect previousNode to curNode.next, continue, until curNode == null.
 
-                Time Complexity : O(n)
+        Time Complexity : O(n)
 
         Space Complexity : O(1)
         */
