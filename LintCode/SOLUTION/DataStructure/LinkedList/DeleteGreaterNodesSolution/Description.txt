@@ -1,6 +1,13 @@
-@param
+
+Description:
+
+@Implementation
+public Node deleteGreaterNodes(Node head, int val)
+
+@Param
 head : The head of a Linked List
 val : An Integer
 
-@function
+@Requirement
 Delete all the nodes which value is greater than val, return the head of the modified linked list.
+

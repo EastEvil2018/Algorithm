@@ -5,13 +5,13 @@ import Algorithm.LintCode.SOLUTION.Solution;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SharedInterestsSolution implements Solution {
+public class SharedInterestsSolution extends Solution {
 
     int maxProduct = 0;
 
     int maxNumOfPairs = 0;
 
-    public void run()
+    public void test()
     {
         // Here we should write some test cases
 
@@ -50,15 +50,6 @@ public class SharedInterestsSolution implements Solution {
         System.out.println(result);
     }
 
-    public void describe()
-    {
-        // Here we should show some descriptions for this problem
-    }
-
-    public void explain()
-    {
-        // Here we should explain the solution
-    }
 
     public int sharedInterets(int numOfNodes, List<Integer> from, List<Integer> to, List<Integer> weights)
     {

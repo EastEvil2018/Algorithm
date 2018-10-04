@@ -6,9 +6,9 @@ import Algorithm.LintCode.SOLUTION.Solution;
 
 import java.util.HashSet;
 
-public class MostFrequentSubstringSolution implements Solution {
+public class MostFrequentSubstringSolution extends Solution {
 
-    public void run()
+    public void test()
     {
         // Here we should write some test cases here
 
@@ -19,15 +19,6 @@ public class MostFrequentSubstringSolution implements Solution {
 
     }
 
-    public void describe()
-    {
-        // Here we should show some descriptions for this problem
-    }
-
-    public void explain()
-    {
-        // Here we should explain the solution
-    }
 
     Trie root = new Trie();
 

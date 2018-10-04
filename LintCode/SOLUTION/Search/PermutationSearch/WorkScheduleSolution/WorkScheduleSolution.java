@@ -5,9 +5,9 @@ import Algorithm.LintCode.SOLUTION.Solution;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WorkScheduleSolution implements Solution {
+public class WorkScheduleSolution extends Solution {
 
-    public void run()
+    public void test()
     {
         // Here we should write some test cases
 
@@ -19,16 +19,6 @@ public class WorkScheduleSolution implements Solution {
         {
             System.out.println(result.get(i));
         }
-    }
-
-    public void describe()
-    {
-        // Here we should show some descriptions for this problem
-    }
-
-    public void explain()
-    {
-        // Here we should explain the solution
     }
 
     public List<String> workSchedule(String candidate, int dailyMaxHours, int weeklyMaxHours)

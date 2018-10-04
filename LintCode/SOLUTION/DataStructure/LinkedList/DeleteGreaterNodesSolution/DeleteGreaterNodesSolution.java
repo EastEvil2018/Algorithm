@@ -5,34 +5,37 @@ import Algorithm.LintCode.SOLUTION.Solution;
 import Algorithm.LintCode.UTILLS.ConstructUtills;
 import Algorithm.LintCode.UTILLS.PrintUtills;
 
-public class DeleteGreaterNodesSolution implements Solution {
+import java.io.File;
+import java.net.URL;
+import java.util.Scanner;
+import java.util.regex.Pattern;
 
-    public void run()
+public class DeleteGreaterNodesSolution extends Solution {
+
+    public void test()
     {
-        // write some test cases here
+        System.out.println("Test:");
 
         int x = 6;
 
         Node head = ConstructUtills.constructLinkedList(8, 20);
 
+        System.out.println("\nBefore Testing:\n");
+
+        PrintUtills.printLinkedList(head);
+
         head = deleteGreaterNodes(head, x);
+
+        System.out.println("\nAfter Testing:\n");
 
         PrintUtills.printLinkedList(head);
     }
 
-    public void describe()
-    {
-        // Here we should show some descriptions for this problem
-    }
-
-    public void explain()
-    {
-        // Here we should explain the solution
-    }
 
     public Node deleteGreaterNodes(Node head, int val)
     {
         Node temp = head;
+
         Node prev = head;
 
         while (temp.val > val)
