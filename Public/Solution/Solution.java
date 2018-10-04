@@ -1,4 +1,4 @@
-package Algorithm.LintCode.Solution;
+package Algorithm.Public.Solution;
 
 import java.io.File;
 import java.net.URL;

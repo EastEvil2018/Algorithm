@@ -1,6 +1,6 @@
-package Algorithm.LintCode.Solution.Search.GraphSearch.ShareInterestsSolution;
+package Algorithm.LintCode.Search.GraphSearch.ShareInterestsSolution;
 
-import Algorithm.LintCode.Solution.Solution;
+import Algorithm.Public.Solution.Solution;
 
 import java.util.ArrayList;
 import java.util.List;

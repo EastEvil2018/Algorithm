@@ -1,8 +1,8 @@
-package Algorithm.LintCode.Solution.DataStructure.Trie.MostFrequentSubstringSolution;
+package Algorithm.LintCode.DataStructure.Trie.MostFrequentSubstringSolution;
 
 import Algorithm.Public.DataStructure.Trie;
 
-import Algorithm.LintCode.Solution.Solution;
+import Algorithm.Public.Solution.Solution;
 
 import java.util.HashSet;
 

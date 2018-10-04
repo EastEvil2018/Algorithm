@@ -1,7 +1,7 @@
-package Algorithm.LintCode.Solution.DataStructure.LinkedList.DeleteGreaterNodesSolution;
+package Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution;
 
 import Algorithm.Public.DataStructure.Node;
-import Algorithm.LintCode.Solution.Solution;
+import Algorithm.Public.Solution.Solution;
 import Algorithm.Public.Utills.ConstructUtills;
 import Algorithm.Public.Utills.PrintUtills;
 

@@ -1,7 +1,7 @@
 package Algorithm;
 
-import Algorithm.LintCode.Solution.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
-import Algorithm.LintCode.Solution.Solution;
+import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
+import Algorithm.Public.Solution.Solution;
 
 public class Analyzer {
 
