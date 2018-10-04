@@ -1,7 +1,6 @@
 # Algorithm
 Record algorithm solutions
 
-2018-10-03
 Hello guys, this is my own algorithm project which I want to store my solutions on some interesting interview problems.
 Since this is my own tool for debuging my code in local, this project is built to let me more conveniently do algorithms.
 
