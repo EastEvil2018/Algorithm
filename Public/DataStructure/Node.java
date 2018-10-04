@@ -1,4 +1,4 @@
-package Algorithm.LintCode.PUBLIC_DATA_STRUCTURE;
+package Algorithm.Public.DataStructure;
 
 public class Node {
 

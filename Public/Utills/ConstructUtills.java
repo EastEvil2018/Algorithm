@@ -1,6 +1,6 @@
-package Algorithm.LintCode.UTILLS;
+package Algorithm.Public.Utills;
 
-import Algorithm.LintCode.PUBLIC_DATA_STRUCTURE.Node;
+import Algorithm.Public.DataStructure.Node;
 
 import java.util.Random;
 

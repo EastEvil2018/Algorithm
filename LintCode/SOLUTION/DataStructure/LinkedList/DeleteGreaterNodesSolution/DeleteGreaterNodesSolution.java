@@ -1,14 +1,9 @@
-package Algorithm.LintCode.SOLUTION.DataStructure.LinkedList.DeleteGreaterNodesSolution;
+package Algorithm.LintCode.Solution.DataStructure.LinkedList.DeleteGreaterNodesSolution;
 
-import Algorithm.LintCode.PUBLIC_DATA_STRUCTURE.Node;
-import Algorithm.LintCode.SOLUTION.Solution;
-import Algorithm.LintCode.UTILLS.ConstructUtills;
-import Algorithm.LintCode.UTILLS.PrintUtills;
-
-import java.io.File;
-import java.net.URL;
-import java.util.Scanner;
-import java.util.regex.Pattern;
+import Algorithm.Public.DataStructure.Node;
+import Algorithm.LintCode.Solution.Solution;
+import Algorithm.Public.Utills.ConstructUtills;
+import Algorithm.Public.Utills.PrintUtills;
 
 public class DeleteGreaterNodesSolution extends Solution {
 
