@@ -1,5 +1,4 @@
 # Algorithm
-Record algorithm solutions
 
 Hello guys, this is my own algorithm project which I want to store my solutions on some interesting interview problems.
 
