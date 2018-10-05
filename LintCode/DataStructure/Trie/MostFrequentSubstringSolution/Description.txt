@@ -1,0 +1,20 @@
+
+Description:
+
+@Implementation
+public int mostFrequentSubstring(int strLen, int minLen, int maxLen, int maxUniqueSize, String str)
+
+@Param
+strLen : the length of String str
+
+minLen : the minimum length of the substring
+
+maxLen : the maximum length of the substring
+
+maxUniqueSize : the maximum number of unique Characters in the substring
+
+str : the string
+
+@Requirement
+Find the most frequent substring of the String str which length should be (minLen <= len <= maxLen)
+and the number of unique Characters can not exceed maxUniqueSize.

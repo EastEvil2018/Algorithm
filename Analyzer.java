@@ -1,5 +1,6 @@
 package Algorithm;
 
+import Algorithm.LintCode.DataStructure.Interval.MergeIntervalsSolution.MergeIntervalsSolution;
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
 import Algorithm.Public.Solution.Solution;
 
@@ -55,6 +56,10 @@ public class Analyzer {
         Space Complexity : O(1)
         */
 
+
+        Solution mis = new MergeIntervalsSolution();
+
+        mis.run();
 
     }
 }
