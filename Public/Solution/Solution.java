@@ -21,7 +21,7 @@ public class Solution implements AbstractSolution{
 
         try
         {
-            URL url = getClass().getResource("Description.txt");
+            URL url = getClass().getResource("Description.txt.txt");
 
             File file = new File(url.getPath());
 

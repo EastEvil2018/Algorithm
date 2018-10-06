@@ -2,7 +2,10 @@ package Algorithm;
 
 import Algorithm.LintCode.DataStructure.Interval.MergeIntervalsSolution.MergeIntervalsSolution;
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
+import Algorithm.LintCode.DataStructure.String.ValidAnagramSolution.ValidAnagramSolution;
 import Algorithm.Public.Solution.Solution;
+
+import javax.sound.midi.Soundbank;
 
 public class Analyzer {
 
@@ -19,7 +22,7 @@ public class Analyzer {
         /*
         Expected OutPut :
 
-        Description:
+        Description.txt:
 
         @Implementation
         public Node deleteGreaterNodes(Node head, int val)
@@ -60,6 +63,10 @@ public class Analyzer {
         Solution mis = new MergeIntervalsSolution();
 
         mis.run();
+
+        Solution vas = new ValidAnagramSolution();
+
+        vas.run();
 
     }
 }
