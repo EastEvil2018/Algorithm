@@ -1,0 +1,20 @@
+
+Explanation :
+
+Using an array of 256 (256 Characters total) memo[]
+
+Then iterate String a,
+
+for each Char c in a, memo[c]++
+
+Then iterate String b,
+
+for each Char c in b, memo[c]--
+
+Then iterate String a or b,
+
+if a and b are anagram, memo[] should be all 0
+
+Time Complexity : O(n)
+
+Space Complexity : O(1)
