@@ -1,11 +1,8 @@
 package Algorithm;
 
-import Algorithm.LintCode.DataStructure.Interval.MergeIntervalsSolution.MergeIntervalsSolution;
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
-import Algorithm.LintCode.DataStructure.String.ValidAnagramSolution.ValidAnagramSolution;
+import Algorithm.LintCode.Search.BackTracking.WordSearchSolution.WordSearchSolution;
 import Algorithm.Public.Solution.Solution;
-
-import javax.sound.midi.Soundbank;
 
 public class Analyzer {
 
@@ -60,13 +57,17 @@ public class Analyzer {
         */
 
 
-        Solution mis = new MergeIntervalsSolution();
+//        Solution mis = new MergeIntervalsSolution();
+//
+//        mis.run();
+//
+//        Solution vas = new ValidAnagramSolution();
+//
+//        vas.run();
 
-        mis.run();
+        Solution wss = new WordSearchSolution();
 
-        Solution vas = new ValidAnagramSolution();
-
-        vas.run();
+        wss.run();
 
     }
 }
