@@ -1,6 +1,7 @@
 package Algorithm;
 
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
+import Algorithm.LintCode.Search.BackTracking.TowerOfHanoiSolution.TowerOfHanoiSolution;
 import Algorithm.LintCode.Search.BackTracking.WordSearchSolution.WordSearchSolution;
 import Algorithm.Public.Solution.Solution;
 
@@ -65,9 +66,13 @@ public class Analyzer {
 //
 //        vas.run();
 
-        Solution wss = new WordSearchSolution();
+//        Solution wss = new WordSearchSolution();
+//
+//        wss.run();
 
-        wss.run();
+          Solution tohs = new TowerOfHanoiSolution();
+
+          tohs.run();
 
     }
 }
