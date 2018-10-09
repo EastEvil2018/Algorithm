@@ -1,6 +1,7 @@
 package Algorithm;
 
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
+import Algorithm.LintCode.Search.BackTracking.FactorizationSolution.FactorizationSolution;
 import Algorithm.LintCode.Search.BackTracking.TowerOfHanoiSolution.TowerOfHanoiSolution;
 import Algorithm.LintCode.Search.BackTracking.WordSearchSolution.WordSearchSolution;
 import Algorithm.Public.Solution.Solution;
@@ -70,9 +71,12 @@ public class Analyzer {
 //
 //        wss.run();
 
-          Solution tohs = new TowerOfHanoiSolution();
+//          Solution tohs = new TowerOfHanoiSolution();
+//
+//          tohs.run();
 
-          tohs.run();
+        Solution fs = new FactorizationSolution();
+        fs.run();
 
     }
 }

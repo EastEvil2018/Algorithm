@@ -43,6 +43,30 @@ public class PrintUtills {
         System.out.print(interval.end + " ) ");
     }
 
+    public static void printListOfIntegerList(List<List<Integer>> list)
+    {
+        System.out.println("The list of list of Integer is printed below : ");
+
+        System.out.print("{\n");
+
+        for (int i = 0; i < list.size(); i++)
+        {
+            printIntegerList(list.get(i));
+        }
+
+        System.out.print("\n}");
+    }
+
+    public static void printIntegerList(List<Integer> integerList)
+    {
+        System.out.print("[ ");
+        for (int i = 0; i < integerList.size(); i++)
+        {
+            System.out.print(integerList.get(i) + " ");
+        }
+        System.out.print("]");
+    }
+
     public static void printCharArray(char[][] array)
     {
         int sum = array.length;
