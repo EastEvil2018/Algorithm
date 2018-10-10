@@ -64,7 +64,7 @@ public class PrintUtills {
         {
             System.out.print(integerList.get(i) + " ");
         }
-        System.out.print("]");
+        System.out.print("]\n");
     }
 
     public static void printCharArray(char[][] array)

@@ -2,8 +2,10 @@ package Algorithm;
 
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
 import Algorithm.LintCode.Search.BackTracking.FactorizationSolution.FactorizationSolution;
+import Algorithm.LintCode.Search.BackTracking.FindMissingNumber2Solution.FindMissingNumber2Solution;
 import Algorithm.LintCode.Search.BackTracking.TowerOfHanoiSolution.TowerOfHanoiSolution;
 import Algorithm.LintCode.Search.BackTracking.WordSearchSolution.WordSearchSolution;
+import Algorithm.LintCode.Sort.HouseRankingSolution.HouseRankingSolution;
 import Algorithm.Public.Solution.Solution;
 
 public class Analyzer {
@@ -75,8 +77,16 @@ public class Analyzer {
 //
 //          tohs.run();
 
-        Solution fs = new FactorizationSolution();
-        fs.run();
+//        Solution fs = new FactorizationSolution();
+//        fs.run();
+
+          Solution fmn2s = new FindMissingNumber2Solution();
+
+          fmn2s.run();
+
+//        Solution hrs = new HouseRankingSolution();
+//
+//        hrs.run();
 
     }
 }
