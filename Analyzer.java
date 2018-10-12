@@ -2,6 +2,8 @@ package Algorithm;
 
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
 import Algorithm.LintCode.DataStructure.Trie.WordSquaresSolution.WordSquaresSolution;
+import Algorithm.LintCode.DynamicProgramming.RangeSumQuery2DSolution.RangeSumQuery2DSolution;
+import Algorithm.LintCode.DynamicProgramming.RangeSumQueryImmutableSolution.RangeSumQueryImmutableSolution;
 import Algorithm.LintCode.Search.BackTracking.FactorizationSolution.FactorizationSolution;
 import Algorithm.LintCode.Search.BackTracking.FindMissingNumber2Solution.FindMissingNumber2Solution;
 import Algorithm.LintCode.Search.BackTracking.TowerOfHanoiSolution.TowerOfHanoiSolution;
@@ -89,9 +91,16 @@ public class Analyzer {
 //
 //        hrs.run();
 
-          Solution wss = new WordSquaresSolution();
+//          Solution wss = new WordSquaresSolution();
+//
+//          wss.run();
 
-          wss.run();
+//          Solution rsq2s = new RangeSumQuery2DSolution();
+//
+//          rsq2s.run();
+
+        Solution rsqs = new RangeSumQueryImmutableSolution();
+        rsqs.run();
 
     }
 }
