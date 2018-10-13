@@ -6,6 +6,7 @@ import Algorithm.LintCode.DynamicProgramming.RangeSumQuery2DSolution.RangeSumQue
 import Algorithm.LintCode.DynamicProgramming.RangeSumQueryImmutableSolution.RangeSumQueryImmutableSolution;
 import Algorithm.LintCode.Search.BackTracking.FactorizationSolution.FactorizationSolution;
 import Algorithm.LintCode.Search.BackTracking.FindMissingNumber2Solution.FindMissingNumber2Solution;
+import Algorithm.LintCode.Search.BackTracking.PalindromePermutation2Solution.PalindromePermutation2Solution;
 import Algorithm.LintCode.Search.BackTracking.TowerOfHanoiSolution.TowerOfHanoiSolution;
 import Algorithm.LintCode.Search.BackTracking.WordSearchSolution.WordSearchSolution;
 import Algorithm.LintCode.Sort.HouseRankingSolution.HouseRankingSolution;
@@ -99,8 +100,12 @@ public class Analyzer {
 //
 //          rsq2s.run();
 
-        Solution rsqs = new RangeSumQueryImmutableSolution();
-        rsqs.run();
+//        Solution rsqs = new RangeSumQueryImmutableSolution();
+//        rsqs.run();
+
+        Solution pp2s = new PalindromePermutation2Solution();
+
+        pp2s.run();
 
     }
 }
