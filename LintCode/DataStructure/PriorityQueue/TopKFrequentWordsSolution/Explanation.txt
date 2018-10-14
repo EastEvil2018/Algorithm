@@ -1,0 +1,22 @@
+
+Explanation :
+
+We use PriorityQueue to do this problem.
+
+First think about the rule of priority in this problem.
+
+First, compare the frequency of word appearance.
+
+So we need to remember the frequency of each word, how to?
+
+HashMap<String, Integer>.
+
+Then, if frequency is the same, compares the strings.
+
+So we both need a word and frequency in one data object.
+
+So we need to create a new class includes both word and frequency.
+
+Then we create a new Comparator to compare.
+
+Then we construct the priority queue, poll the top k words, done.

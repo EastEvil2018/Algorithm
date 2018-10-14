@@ -1,6 +1,7 @@
 package Algorithm;
 
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
+import Algorithm.LintCode.DataStructure.PriorityQueue.TopKFrequentWordsSolution.TopKFrequentWordsSolution;
 import Algorithm.LintCode.DataStructure.Trie.WordSquaresSolution.WordSquaresSolution;
 import Algorithm.LintCode.DynamicProgramming.RangeSumQuery2DSolution.RangeSumQuery2DSolution;
 import Algorithm.LintCode.DynamicProgramming.RangeSumQueryImmutableSolution.RangeSumQueryImmutableSolution;
@@ -103,9 +104,13 @@ public class Analyzer {
 //        Solution rsqs = new RangeSumQueryImmutableSolution();
 //        rsqs.run();
 
-        Solution pp2s = new PalindromePermutation2Solution();
+//        Solution pp2s = new PalindromePermutation2Solution();
+//
+//        pp2s.run();
 
-        pp2s.run();
+          Solution tkfws = new TopKFrequentWordsSolution();
+
+          tkfws.run();
 
     }
 }
