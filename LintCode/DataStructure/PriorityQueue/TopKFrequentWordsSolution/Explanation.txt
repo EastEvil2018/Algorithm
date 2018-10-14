@@ -20,3 +20,7 @@ So we need to create a new class includes both word and frequency.
 Then we create a new Comparator to compare.
 
 Then we construct the priority queue, poll the top k words, done.
+
+Time Complexity :
+
+Space Complexity :s
