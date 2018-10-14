@@ -10,6 +10,7 @@ import Algorithm.LintCode.Search.BackTracking.FindMissingNumber2Solution.FindMis
 import Algorithm.LintCode.Search.BackTracking.PalindromePermutation2Solution.PalindromePermutation2Solution;
 import Algorithm.LintCode.Search.BackTracking.TowerOfHanoiSolution.TowerOfHanoiSolution;
 import Algorithm.LintCode.Search.BackTracking.WordSearchSolution.WordSearchSolution;
+import Algorithm.LintCode.Search.PermutationSearch.UniquePermutationSolution.UniquePermuationSolution;
 import Algorithm.LintCode.Sort.HouseRankingSolution.HouseRankingSolution;
 import Algorithm.Public.Solution.Solution;
 
@@ -108,9 +109,12 @@ public class Analyzer {
 //
 //        pp2s.run();
 
-          Solution tkfws = new TopKFrequentWordsSolution();
+//          Solution tkfws = new TopKFrequentWordsSolution();
+//
+//          tkfws.run();
 
-          tkfws.run();
+        Solution ups = new UniquePermuationSolution();
+        ups.run();
 
     }
 }
