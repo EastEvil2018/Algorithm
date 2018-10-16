@@ -20,16 +20,28 @@ public class PrintUtills {
         System.out.println("null");
     }
 
-    public static void printIntervalList(List<Interval> intervals) {
-        System.out.println("The Interval List is printed below : ");
+    public static void printeListOfIntervalList(List<List<Interval>> intervals)
+    {
+        System.out.println("The List of Interval List is printed below : ");
 
         System.out.print("{");
+
+        for (int i = 0; i < intervals.size(); i++) {
+            printIntervalList(intervals.get(i));
+        }
+
+        System.out.println("}");
+    }
+
+    public static void printIntervalList(List<Interval> intervals) {
+
+        System.out.print("[");
 
         for (int i = 0; i < intervals.size(); i++) {
             printInterval(intervals.get(i));
         }
 
-        System.out.print("}");
+        System.out.print("]");
     }
 
     public static void printInterval(Interval interval) {

@@ -1,6 +1,10 @@
 package Algorithm;
 
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
+import Algorithm.LintCode.DataStructure.PriorityQueue.MergeKSortedArraySolution.MergeKSortedArraySolution;
+import Algorithm.LintCode.DataStructure.PriorityQueue.MergeKSortedIntervalList.MergeKSortedIntervalListSolution;
+import Algorithm.LintCode.DataStructure.PriorityQueue.MergeNumberSolution.MergeNumberSolution;
+import Algorithm.LintCode.DataStructure.PriorityQueue.MergeTwoSortedIntervalList.MergeTwoSortedIntervalListSolution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.TopKFrequentWordsSolution.TopKFrequentWordsSolution;
 import Algorithm.LintCode.DataStructure.Trie.WordSquaresSolution.WordSquaresSolution;
 import Algorithm.LintCode.DynamicProgramming.RangeSumQuery2DSolution.RangeSumQuery2DSolution;
@@ -117,8 +121,24 @@ public class Analyzer {
 //        Solution ups = new UniquePermuationSolution();
 //        ups.run();
 
-        Solution ks2s = new KSum2Solution();
-        ks2s.run();
+//        Solution ks2s = new KSum2Solution();
+//        ks2s.run();
+
+//        Solution mns = new MergeNumberSolution();
+//
+//        mns.run();
+
+//          Solution mksils = new MergeKSortedIntervalListSolution();
+//
+//          mksils.run();
+
+//        Solution m2sils = new MergeTwoSortedIntervalListSolution();
+//
+//        m2sils.run();
+
+        Solution mkas = new MergeKSortedArraySolution();
+
+        mkas.run();
 
     }
 }

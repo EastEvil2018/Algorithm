@@ -1,0 +1,24 @@
+
+Explanation :
+
+The first solution is brute-force.
+
+Let us assume N is the total number of integers.
+
+K is the number of arrays.
+
+Create a N-size PriorityQueue.
+
+And insert all the numbers into it, then poll all them,
+
+But this is O(NlogN).
+
+What about the challenge?
+
+Well, it time-complexity is O(NlogK), K is the number of arrays.
+
+So we should create a K-size PriorityQueue, then do poll() N times.
+
+That is, always keep the head element of arrays in the PriorityQueue,
+
+Then after poll() it, insert into the next element of array.

@@ -1,0 +1,6 @@
+
+Explanation :
+
+Same As Merge K Sorted Arrays, we will do another implementation after.
+
+This is brute-force.
