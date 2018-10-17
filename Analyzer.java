@@ -1,11 +1,15 @@
 package Algorithm;
 
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
+import Algorithm.LintCode.DataStructure.PriorityQueue.KthSmallestNumberInSortedMatrixSolution.KthSmallestNumberInSortedMatrixSolution;
+import Algorithm.LintCode.DataStructure.PriorityQueue.MedianOfKSortedArraysSolution.MedianOfKSortedArraysSolution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.MergeKSortedArraySolution.MergeKSortedArraySolution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.MergeKSortedIntervalList.MergeKSortedIntervalListSolution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.MergeNumberSolution.MergeNumberSolution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.MergeTwoSortedIntervalList.MergeTwoSortedIntervalListSolution;
+import Algorithm.LintCode.DataStructure.PriorityQueue.TopKFrequentWods2Solution.TopKFrequentWords2Solution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.TopKFrequentWordsSolution.TopKFrequentWordsSolution;
+import Algorithm.LintCode.DataStructure.PriorityQueue.TopKLargestNumberSolution.TopKLargestNumberSolution;
 import Algorithm.LintCode.DataStructure.Trie.WordSquaresSolution.WordSquaresSolution;
 import Algorithm.LintCode.DynamicProgramming.RangeSumQuery2DSolution.RangeSumQuery2DSolution;
 import Algorithm.LintCode.DynamicProgramming.RangeSumQueryImmutableSolution.RangeSumQueryImmutableSolution;
@@ -135,10 +139,26 @@ public class Analyzer {
 //        Solution m2sils = new MergeTwoSortedIntervalListSolution();
 //
 //        m2sils.run();
+//
+//        Solution mkas = new MergeKSortedArraySolution();
+//
+//        mkas.run();
 
-        Solution mkas = new MergeKSortedArraySolution();
+//        Solution tklns = new TopKLargestNumberSolution();
+//
+//        tklns.run();
 
-        mkas.run();
+//        Solution moksS = new MedianOfKSortedArraysSolution();
+//
+//        moksS.run();
+
+//        Solution mys = new KthSmallestNumberInSortedMatrixSolution();
+//
+//        mys.run();
+
+        Solution mys = new TopKFrequentWords2Solution();
+
+        mys.run();
 
     }
 }

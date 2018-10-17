@@ -118,12 +118,14 @@ public class PrintUtills {
 
     public static void printStringArray(String[] stringArray)
     {
+        System.out.print("[ ");
+
         for (int i = 0; i < stringArray.length; i++)
         {
             System.out.print(stringArray[i] + " ");
         }
 
-        System.out.print("\n");
+        System.out.print("]\n");
     }
 
     public static void printInt2DArray(int[][] array)

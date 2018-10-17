@@ -56,102 +56,269 @@ public class MergeKSortedIntervalListSolution extends Solution {
 
     }
 
-    public class IntervalComparator implements Comparator<Interval>
+//    First : O(NlogK), keep an K-size PriorityQueue
+    public class IntervalPack
     {
-        public int compare(Interval a, Interval b)
+        public Interval interval;
+        public int col, row;
+
+        public IntervalPack(Interval interval, int col, int row)
         {
-            if (a.start < b.start)
-            {
-                return -1;
-            }
+            this.interval = interval;
 
-            if (a.start > b.start)
-            {
+            this.col = col;
+
+            this.row = row;
+        }
+    }
+
+    public class IntervalPackComparator implements Comparator<IntervalPack>
+    {
+        public int compare(IntervalPack ip1, IntervalPack ip2)
+        {
+            Interval i1 = ip1.interval;
+            Interval i2 = ip2.interval;
+
+            if (i1.start < i2.start)
+                return -1;
+            if (i1.start > i2.start)
                 return 1;
-            }
 
-
-            if (a.end < b.end)
+            if (i1.end < i2.end)
                 return -1;
-
-            if (a.end > b.end)
+            if (i1.end > i2.end)
                 return 1;
 
             return 0;
-
         }
     }
 
     public List<Interval> mergeKSortedIntervalLists(List<List<Interval>> intervals) {
         // write your code here
 
-        PriorityQueue<Interval> pq = new PriorityQueue<Interval>(intervals.size(), new IntervalComparator());
+        List<Interval> result = new ArrayList<>();
 
-        int len = intervals.size();
+        int K = intervals.size();
 
-        for (int i = 0; i < len; i++)
+        if (K == 0)
+            return result;
+
+        PriorityQueue<IntervalPack> pq = new PriorityQueue<IntervalPack>(K, new IntervalPackComparator());
+
+        for (int i = 0; i < K; i++)
         {
             List<Interval> cur = intervals.get(i);
 
-            int curSize = cur.size();
+            if (cur.size() == 0)
+                continue;
 
-            for (int j = 0; j < curSize; j++)
-            {
-                pq.add(cur.get(j));
-            }
+            IntervalPack curIP = new IntervalPack(cur.get(0), i, 0);
+
+            pq.add(curIP);
         }
 
-        List<Interval> result = new ArrayList<>();
+        if (pq.isEmpty())
+            return result;
 
-        Interval curInterval = pq.poll();
+        IntervalPack cur = pq.poll();
 
-        result.add(curInterval);
+        Interval curElem = new Interval(cur.interval.start, cur.interval.end);
 
-        Interval prevInterval = curInterval;
+        result.add(curElem);
+
+        Interval prevElem = new Interval(cur.interval.start, cur.interval.end);
+
+        IntervalPack prev = new IntervalPack(prevElem, cur.col, cur.row);
+
+        if (cur.row < intervals.get(cur.col).size() - 1)
+        {
+            cur.interval = intervals.get(cur.col).get(cur.row + 1);
+
+            cur.row++;
+
+            pq.add(cur);
+
+        }
 
 
         while(!pq.isEmpty())
         {
-            curInterval = pq.poll();
+            cur = pq.poll();
 
-            if (curInterval.start > prevInterval.start)
+            Interval curInt = new Interval(cur.interval.start, cur.interval.end);
+
+            Interval preInt = prev.interval;
+
+            if (curInt.start > preInt.end)
             {
-                if (curInterval.start > prevInterval.end)
+
+
+                result.add(curInt);
+
+                prev.interval.start = cur.interval.start;
+
+                prev.interval.end = cur.interval.end;
+
+                System.out.println("Start : " + curInt.start + "End : " + curInt.end);
+
+                int curCol = cur.col;
+
+                int curRow = cur.row;
+
+                if (curRow < intervals.get(curCol).size() - 1)
                 {
-                    result.add(curInterval);
+                    cur.interval = intervals.get(curCol).get(curRow + 1);
 
-                    prevInterval = curInterval;
+                    cur.row++;
 
-                    continue;
-                } else
+                    pq.add(cur);
+
+                }
+
+
+            } else if (curInt.start <= preInt.end)
+            {
+                if (curInt.end > preInt.end)
                 {
-                    if (curInterval.end <= prevInterval.end)
-                    {
-                        continue;
-                    } else
-                    {
-                        result.get(result.size() - 1).end = curInterval.end;
+                    result.get(result.size() - 1).end = curInt.end;
 
-                        prevInterval = result.get(result.size() - 1);
+                    prev.interval.end = result.get(result.size() - 1).end;
+
+                    int curCol = cur.col;
+
+                    int curRow = cur.row;
+
+                    if (curRow < intervals.get(curCol).size() - 1)
+                    {
+                        cur.interval = intervals.get(curCol).get(curRow + 1);
+
+                        cur.row++;
+
+                        pq.add(cur);
+
+                    }
+
+
+                } else if (curInt.end <= preInt.end)
+                {
+                    int curCol = cur.col;
+
+                    int curRow = cur.row;
+
+                    if (curRow < intervals.get(curCol).size() - 1)
+                    {
+                        cur.interval = intervals.get(curCol).get(curRow + 1);
+
+                        cur.row++;
+
+                        pq.add(cur);
+
                     }
                 }
-
-            } else if (curInterval.start == prevInterval.start)
-            {
-                if (curInterval.end <= prevInterval.end)
-                {
-                    continue;
-                } else if (curInterval.end > prevInterval.end)
-                {
-                    result.get(result.size() - 1).end = curInterval.end;
-
-                    prevInterval = result.get(result.size() - 1);
-
-                    continue;
-                }
             }
+
+
         }
 
         return result;
     }
+//    Second : Brute Force, O(NlogN)
+//    public class IntervalComparator implements Comparator<Interval>
+//    {
+//        public int compare(Interval a, Interval b)
+//        {
+//            if (a.start < b.start)
+//            {
+//                return -1;
+//            }
+//
+//            if (a.start > b.start)
+//            {
+//                return 1;
+//            }
+//
+//
+//            if (a.end < b.end)
+//                return -1;
+//
+//            if (a.end > b.end)
+//                return 1;
+//
+//            return 0;
+//
+//        }
+//    }
+//
+//    public List<Interval> mergeKSortedIntervalLists(List<List<Interval>> intervals) {
+//        // write your code here
+//
+//        PriorityQueue<Interval> pq = new PriorityQueue<Interval>(intervals.size(), new IntervalComparator());
+//
+//        int len = intervals.size();
+//
+//        for (int i = 0; i < len; i++)
+//        {
+//            List<Interval> cur = intervals.get(i);
+//
+//            int curSize = cur.size();
+//
+//            for (int j = 0; j < curSize; j++)
+//            {
+//                pq.add(cur.get(j));
+//            }
+//        }
+//
+//        List<Interval> result = new ArrayList<>();
+//
+//        Interval curInterval = pq.poll();
+//
+//        result.add(curInterval);
+//
+//        Interval prevInterval = curInterval;
+//
+//
+//        while(!pq.isEmpty())
+//        {
+//            curInterval = pq.poll();
+//
+//            if (curInterval.start > prevInterval.start)
+//            {
+//                if (curInterval.start > prevInterval.end)
+//                {
+//                    result.add(curInterval);
+//
+//                    prevInterval = curInterval;
+//
+//                    continue;
+//                } else
+//                {
+//                    if (curInterval.end <= prevInterval.end)
+//                    {
+//                        continue;
+//                    } else
+//                    {
+//                        result.get(result.size() - 1).end = curInterval.end;
+//
+//                        prevInterval = result.get(result.size() - 1);
+//                    }
+//                }
+//
+//            } else if (curInterval.start == prevInterval.start)
+//            {
+//                if (curInterval.end <= prevInterval.end)
+//                {
+//                    continue;
+//                } else if (curInterval.end > prevInterval.end)
+//                {
+//                    result.get(result.size() - 1).end = curInterval.end;
+//
+//                    prevInterval = result.get(result.size() - 1);
+//
+//                    continue;
+//                }
+//            }
+//        }
+//
+//        return result;
+//    }
 }

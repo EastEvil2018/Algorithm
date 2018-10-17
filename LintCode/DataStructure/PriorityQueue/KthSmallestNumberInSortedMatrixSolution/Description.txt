@@ -1,0 +1,7 @@
+
+Description :
+
+Find the kth smallest number in at row and column sorted matrix.
+
+Solve it in O(k log n) time where n is the bigger one between row size and column size.
+

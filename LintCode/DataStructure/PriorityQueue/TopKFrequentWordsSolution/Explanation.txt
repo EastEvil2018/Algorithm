@@ -21,7 +21,18 @@ Then we create a new Comparator to compare.
 
 Then we construct the priority queue, poll the top k words, done.
 
-Time Complexity :
+Time Complexity : O(NlogN)
 
-Space Complexity :
+Space Complexity : O(N)
 
+Above is brute force, keep a N-size PriorityQueue, now consider about O(NlogK)
+
+If time complexity is O(NlogK), well, it must keep a K-size ProorityQueue.
+
+But to notice we should keep the queue in reverse order,
+
+That is, when the queue is K size, add next number will compare with the head elem.
+
+If the frequency is more, poll the head, add curWord, which keep the words in queue is the top k words.
+
+And remember to reverse order when output.
