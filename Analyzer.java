@@ -19,6 +19,7 @@ import Algorithm.LintCode.Search.BackTracking.PalindromePermutation2Solution.Pal
 import Algorithm.LintCode.Search.BackTracking.TowerOfHanoiSolution.TowerOfHanoiSolution;
 import Algorithm.LintCode.Search.BackTracking.WordSearchSolution.WordSearchSolution;
 import Algorithm.LintCode.Search.CombinationSearch.KSum2Solution.KSum2Solution;
+import Algorithm.LintCode.Search.GraphSearch.RouteBetweenTwoNodesInGraphSolution.RouteBetweenTwoNodesInGraphSolution;
 import Algorithm.LintCode.Search.PermutationSearch.UniquePermutationSolution.UniquePermuationSolution;
 import Algorithm.LintCode.Sort.HouseRankingSolution.HouseRankingSolution;
 import Algorithm.Public.Solution.Solution;
@@ -155,8 +156,12 @@ public class Analyzer {
 //        Solution mys = new KthSmallestNumberInSortedMatrixSolution();
 //
 //        mys.run();
+//
+//        Solution mys = new TopKFrequentWords2Solution();
+//
+//        mys.run();
 
-        Solution mys = new TopKFrequentWords2Solution();
+        Solution mys = new RouteBetweenTwoNodesInGraphSolution();
 
         mys.run();
 
