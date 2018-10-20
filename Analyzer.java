@@ -18,6 +18,7 @@ import Algorithm.LintCode.Search.BackTracking.FindMissingNumber2Solution.FindMis
 import Algorithm.LintCode.Search.BackTracking.PalindromePermutation2Solution.PalindromePermutation2Solution;
 import Algorithm.LintCode.Search.BackTracking.TowerOfHanoiSolution.TowerOfHanoiSolution;
 import Algorithm.LintCode.Search.BackTracking.WordSearchSolution.WordSearchSolution;
+import Algorithm.LintCode.Search.BreadthFirstSeach.SorroundedRegionsSolution.SorroundedRegionsSolution;
 import Algorithm.LintCode.Search.CombinationSearch.KSum2Solution.KSum2Solution;
 import Algorithm.LintCode.Search.GraphSearch.RouteBetweenTwoNodesInGraphSolution.RouteBetweenTwoNodesInGraphSolution;
 import Algorithm.LintCode.Search.PermutationSearch.UniquePermutationSolution.UniquePermuationSolution;
@@ -161,7 +162,11 @@ public class Analyzer {
 //
 //        mys.run();
 
-        Solution mys = new RouteBetweenTwoNodesInGraphSolution();
+//        Solution mys = new RouteBetweenTwoNodesInGraphSolution();
+//
+//        mys.run();
+
+        Solution mys = new SorroundedRegionsSolution();
 
         mys.run();
 
