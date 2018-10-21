@@ -155,4 +155,34 @@ public class PrintUtills {
         }
         System.out.print("]\n");
     }
+
+    public static void printBoolean2DArray(boolean[][] array)
+    {
+        int row = array.length;
+
+        if (row == 0)
+            return;
+
+        int col = array[0].length;
+
+        if (col == 0)
+            return;
+
+        for (int i = 0; i < row; i++)
+        {
+            printBooleanArray(array[i]);
+        }
+    }
+
+    public static void printBooleanArray(boolean[] array)
+    {
+        System.out.print("[ ");
+        for (int i = 0; i < array.length; i++)
+        {
+            System.out.print(array[i] + " ");
+        }
+        System.out.print("]\n");
+    }
+
+
 }
