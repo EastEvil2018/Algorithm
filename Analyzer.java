@@ -19,6 +19,7 @@ import Algorithm.LintCode.Search.BackTracking.PalindromePermutation2Solution.Pal
 import Algorithm.LintCode.Search.BackTracking.TowerOfHanoiSolution.TowerOfHanoiSolution;
 import Algorithm.LintCode.Search.BackTracking.WordSearchSolution.WordSearchSolution;
 import Algorithm.LintCode.Search.BreadthFirstSeach.SorroundedRegionsSolution.SorroundedRegionsSolution;
+import Algorithm.LintCode.Search.BreadthFirstSeach.ZombieInMatrixSolution.ZombieInMatrixSolution;
 import Algorithm.LintCode.Search.CombinationSearch.KSum2Solution.KSum2Solution;
 import Algorithm.LintCode.Search.GraphSearch.RouteBetweenTwoNodesInGraphSolution.RouteBetweenTwoNodesInGraphSolution;
 import Algorithm.LintCode.Search.PermutationSearch.UniquePermutationSolution.UniquePermuationSolution;
@@ -166,7 +167,11 @@ public class Analyzer {
 //
 //        mys.run();
 
-        Solution mys = new SorroundedRegionsSolution();
+//        Solution mys = new SorroundedRegionsSolution();
+//
+//        mys.run();
+
+        Solution mys = new ZombieInMatrixSolution();
 
         mys.run();
 
