@@ -18,8 +18,13 @@ import Algorithm.LintCode.Search.BackTracking.FindMissingNumber2Solution.FindMis
 import Algorithm.LintCode.Search.BackTracking.PalindromePermutation2Solution.PalindromePermutation2Solution;
 import Algorithm.LintCode.Search.BackTracking.TowerOfHanoiSolution.TowerOfHanoiSolution;
 import Algorithm.LintCode.Search.BackTracking.WordSearchSolution.WordSearchSolution;
+import Algorithm.LintCode.Search.BreadthFirstSeach.CheapestFlightsWithinKStopsSolution.CheapestFlightsWithinKStopsSolution;
 import Algorithm.LintCode.Search.BreadthFirstSeach.KnightShortestPath2Solution.KnightShortestPath2Solution;
+import Algorithm.LintCode.Search.BreadthFirstSeach.Maze2Solution.Maze2Solution;
+import Algorithm.LintCode.Search.BreadthFirstSeach.MazeSolution.MazeSolution;
+import Algorithm.LintCode.Search.BreadthFirstSeach.PortalSolution.PortalSolution;
 import Algorithm.LintCode.Search.BreadthFirstSeach.SorroundedRegionsSolution.SorroundedRegionsSolution;
+import Algorithm.LintCode.Search.BreadthFirstSeach.WallsAndGatesSolution.WallsAndGatesSolution;
 import Algorithm.LintCode.Search.BreadthFirstSeach.ZombieInMatrixSolution.ZombieInMatrixSolution;
 import Algorithm.LintCode.Search.CombinationSearch.KSum2Solution.KSum2Solution;
 import Algorithm.LintCode.Search.GraphSearch.RouteBetweenTwoNodesInGraphSolution.RouteBetweenTwoNodesInGraphSolution;
@@ -176,7 +181,27 @@ public class Analyzer {
 //
 //        mys.run();
 
-        Solution mys = new KnightShortestPath2Solution();
+//        Solution mys = new KnightShortestPath2Solution();
+//
+//        mys.run();
+
+//        Solution mys = new WallsAndGatesSolution();
+//
+//        mys.run();
+
+//        Solution mys = new PortalSolution();
+//
+//        mys.run();
+
+//        Solution mys = new MazeSolution();
+//
+//        mys.run();
+
+//        Solution mys = new Maze2Solution();
+//
+//        mys.run();
+
+        Solution mys = new CheapestFlightsWithinKStopsSolution();
 
         mys.run();
 

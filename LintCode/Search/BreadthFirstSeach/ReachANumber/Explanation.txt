@@ -1,0 +1,7 @@
+
+Explanation :
+
+Pure Math Problem, time limit if using BFS.
+
+Actually I don't care about pure math problem.
+
