@@ -1,0 +1,11 @@
+
+Explanation :
+
+Easy, use O(n1 + n2) time complexity.
+
+Challenge
+
+How can you optimize your algorithm if one array is very large and the other is very small?
+
+Let us do this after.
+
