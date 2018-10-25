@@ -30,7 +30,10 @@ import Algorithm.LintCode.Search.CombinationSearch.KSum2Solution.KSum2Solution;
 import Algorithm.LintCode.Search.GraphSearch.RouteBetweenTwoNodesInGraphSolution.RouteBetweenTwoNodesInGraphSolution;
 import Algorithm.LintCode.Search.PermutationSearch.UniquePermutationSolution.UniquePermuationSolution;
 import Algorithm.LintCode.Sort.HouseRankingSolution.HouseRankingSolution;
+import Algorithm.LintCode.Sort.SortLettersByCaseSolution.SortLettersByCaseSolution;
 import Algorithm.Public.Solution.Solution;
+
+import javax.jws.soap.SOAPBinding;
 
 public class Analyzer {
 
@@ -201,7 +204,11 @@ public class Analyzer {
 //
 //        mys.run();
 
-        Solution mys = new CheapestFlightsWithinKStopsSolution();
+//        Solution mys = new CheapestFlightsWithinKStopsSolution();
+//
+//        mys.run();
+
+        Solution mys = new SortLettersByCaseSolution();
 
         mys.run();
 

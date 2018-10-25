@@ -20,8 +20,7 @@ public class PrintUtills {
         System.out.println("null");
     }
 
-    public static void printeListOfIntervalList(List<List<Interval>> intervals)
-    {
+    public static void printeListOfIntervalList(List<List<Interval>> intervals) {
         System.out.println("The List of Interval List is printed below : ");
 
         System.out.print("{");
@@ -70,7 +69,26 @@ public class PrintUtills {
         System.out.print("]\n");
     }
 
-    public static void printCharArray(char[][] array) {
+    public static void printCharArray(char[] array)
+    {
+        int sum = array.length;
+
+        if (sum == 0)
+            return;
+
+        System.out.print("The char array is printed below : \n[ ");
+
+        for (int i = 0; i < sum; i++) {
+
+            System.out.print(array[i] + " ");
+
+        }
+
+        System.out.print("]\n");
+
+    }
+
+    public static void printChar2DArray(char[][] array) {
         int sum = array.length;
 
         if (sum == 0)
