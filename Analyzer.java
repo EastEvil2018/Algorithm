@@ -31,6 +31,7 @@ import Algorithm.LintCode.Search.GraphSearch.RouteBetweenTwoNodesInGraphSolution
 import Algorithm.LintCode.Search.PermutationSearch.UniquePermutationSolution.UniquePermuationSolution;
 import Algorithm.LintCode.Sort.HouseRankingSolution.HouseRankingSolution;
 import Algorithm.LintCode.Sort.SortLettersByCaseSolution.SortLettersByCaseSolution;
+import Algorithm.LintCode.Sort.WiggleSort.WiggleSortSolution;
 import Algorithm.Public.Solution.Solution;
 
 import javax.jws.soap.SOAPBinding;
@@ -208,7 +209,11 @@ public class Analyzer {
 //
 //        mys.run();
 
-        Solution mys = new SortLettersByCaseSolution();
+//        Solution mys = new SortLettersByCaseSolution();
+//
+//        mys.run();
+
+        Solution mys = new WiggleSortSolution();
 
         mys.run();
 
