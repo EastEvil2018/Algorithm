@@ -20,7 +20,7 @@ public class WordSearchSolution extends Solution
 
         System.out.println("Begin Test : ");
 
-        PrintUtills.printCharArray(board);
+        PrintUtills.printChar2DArray(board);
 
         System.out.println("The word to be searched : " + word + "\n");
 

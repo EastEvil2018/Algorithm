@@ -1,5 +1,10 @@
 package Algorithm;
 
+import Algorithm.HackerRank.WePay.AlerterSolution.AlerterSolution;
+import Algorithm.HackerRank.WePay.NurikabeSolution.NurikabeSolution;
+import Algorithm.HackerRank.WePay.PowerNumberSolution.PowerNumberSolution;
+import Algorithm.HackerRank.WePay.SlidingWindowAverageSolution.SlidingWindowAverageSolution;
+import Algorithm.HackerRank.WePay.ZombieClusterSolution.ZombieCluserSolution;
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.KthSmallestNumberInSortedMatrixSolution.KthSmallestNumberInSortedMatrixSolution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.MedianOfKSortedArraysSolution.MedianOfKSortedArraysSolution;
@@ -10,6 +15,7 @@ import Algorithm.LintCode.DataStructure.PriorityQueue.MergeTwoSortedIntervalList
 import Algorithm.LintCode.DataStructure.PriorityQueue.TopKFrequentWods2Solution.TopKFrequentWords2Solution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.TopKFrequentWordsSolution.TopKFrequentWordsSolution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.TopKLargestNumberSolution.TopKLargestNumberSolution;
+import Algorithm.LintCode.DataStructure.String.AddParenthesesSolution.AddParenthesesSolution;
 import Algorithm.LintCode.DataStructure.Trie.WordSquaresSolution.WordSquaresSolution;
 import Algorithm.LintCode.DynamicProgramming.RangeSumQuery2DSolution.RangeSumQuery2DSolution;
 import Algorithm.LintCode.DynamicProgramming.RangeSumQueryImmutableSolution.RangeSumQueryImmutableSolution;
@@ -44,9 +50,9 @@ public class Analyzer {
         Example to run any one of the problem solution
          */
 
-        Solution sol = new DeleteGreaterNodesSolution();
-
-        sol.run();
+//        Solution sol = new DeleteGreaterNodesSolution();
+//
+//        sol.run();
 
         /*
         Expected OutPut :
@@ -213,9 +219,33 @@ public class Analyzer {
 //
 //        mys.run();
 
-        Solution mys = new WiggleSortSolution();
+//        Solution mys = new WiggleSortSolution();
+//
+//        mys.run();
+
+//        Solution mys = new AddParenthesesSolution();
+//
+//        mys.run();
+
+//        Solution mys = new ZombieCluserSolution();
+//
+//        mys.run();
+
+//        Solution mys = new SlidingWindowAverageSolution();
+//
+//        mys.run();
+
+        Solution mys = new AlerterSolution();
 
         mys.run();
+
+//        Solution mys = new PowerNumberSolution();
+//
+//        mys.run();
+
+//        Solution mys = new NurikabeSolution();
+//
+//        mys.run();
 
     }
 }

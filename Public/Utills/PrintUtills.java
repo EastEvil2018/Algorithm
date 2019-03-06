@@ -146,6 +146,28 @@ public class PrintUtills {
         System.out.print("]\n");
     }
 
+    public static void printString2DArray(String[][] array) {
+        int sum = array.length;
+
+        if (sum == 0)
+            return;
+
+        int length = array[0].length;
+
+        if (length == 0)
+            return;
+
+        System.out.println("The string array is printed below : ");
+
+        for (int i = 0; i < sum; i++) {
+            for (int j = 0; j < length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+
+            System.out.print("\n");
+        }
+    }
+
     public static void printInt2DArray(int[][] array)
     {
         int row = array.length;
@@ -200,6 +222,25 @@ public class PrintUtills {
             System.out.print(array[i] + " ");
         }
         System.out.print("]\n");
+    }
+
+    public static void printFloatArray(float[] array)
+    {
+        int sum = array.length;
+
+        if (sum == 0)
+            return;
+
+        System.out.print("The float array is printed below : \n[ ");
+
+        for (int i = 0; i < sum; i++) {
+
+            System.out.print(array[i] + " ");
+
+        }
+
+        System.out.print("]\n");
+
     }
 
 

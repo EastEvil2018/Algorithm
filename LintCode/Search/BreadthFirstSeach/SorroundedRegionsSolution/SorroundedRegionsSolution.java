@@ -22,13 +22,13 @@ public class SorroundedRegionsSolution extends Solution {
 
         System.out.println("The input board is printed below : ");
 
-        PrintUtills.printCharArray(board);
+        PrintUtills.printChar2DArray(board);
 
         surroundedRegions(board);
 
         System.out.println("The tested result is printed below : ");
 
-        PrintUtills.printCharArray(board);
+        PrintUtills.printChar2DArray(board);
 
 
     }

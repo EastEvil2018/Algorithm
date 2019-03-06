@@ -20,7 +20,7 @@ public class PortalSolution extends Solution {
 
         System.out.println("The tested maze is printed below : ");
 
-        PrintUtills.printCharArray(maze);
+        PrintUtills.printChar2DArray(maze);
 
         int result = Portal(maze);
 
