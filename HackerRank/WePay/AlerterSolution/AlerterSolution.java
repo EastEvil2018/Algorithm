@@ -168,7 +168,7 @@ public class AlerterSolution extends Solution {
 
         while (index < len) {
             while (!dq.isEmpty() && dq.peek() < index - windowSize + 1) {
-                sum -= dq.poll();
+                sum -= inputs.get(dq.poll());
             }
 
             dq.addLast(index);
