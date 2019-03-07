@@ -96,153 +96,94 @@ public class AlerterSolution extends Solution {
                            int windowSize,
                            float allowedIncrease){
 
-        /*
-        {1, 2, 100, 2, 2}, 3, 1.5
-
-        create a queue
-
-        queue.add(1)
-
-        queue.add(2)
-
-        queue.add(100)
-
-        curAve = 1 + 2 + 100 / 3 = 34.3
-
-        curMAxVal = 100
-
-        prevMinAve = curAve = 34.3
-
-        limit = curAve * 1.5 = 51.45
-
-        curMaxVal > 51.45, alert
-
-
-        */
-
-
-        // we first scan the nums, and get the maximum sliding window, but which stores index
-
+        // First check some special cases
         int len = inputs.size();
-
         if (len == 0)
             return false;
-
+        
+        // we first scan the nums, and get the maximum sliding window,
+        // but which stores inputsIndex, because there may be duplicate elements
         int[] maxSlidingWindow = new int[len - windowSize + 1];
-
-        int index = 0;
-
-        int i = 0;
-
+        int inputsIndex = 0;
+        int windowIndex = 0;
         Deque<Integer> dq = new LinkedList<>();
-
-        while (index < len) {
-            while (!dq.isEmpty() && dq.peek() < index - windowSize + 1) {
+        while (inputsIndex < len) {
+            while (!dq.isEmpty() && dq.peek() < inputsIndex - windowSize + 1) {
                 dq.poll();
             }
-
-            while (!dq.isEmpty() && inputs.get(dq.peekLast()) < inputs.get(index)) {
+            while (!dq.isEmpty() && inputs.get(dq.peekLast()) < inputs.get(inputsIndex)) {
                 dq.pollLast();
             }
+            dq.addLast(inputsIndex);
+            if (inputsIndex >= windowSize - 1)
+                maxSlidingWindow[windowIndex++] = dq.peek();
 
-            dq.addLast(index);
-
-            if (index >= windowSize - 1)
-                maxSlidingWindow[i++] = dq.peek();
-
-            index++;
+            inputsIndex++;
         }
 
-
         // Then we scan the inputs twice, to get the average sliding window
-
         float[] aveSlidingWindow = new float[len - windowSize + 1];
-
-        index = 0;
-
-        i = 0;
-
+        inputsIndex = 0;
+        windowIndex = 0;
         dq.clear();
-
         int sum = 0;
-
-        while (index < len) {
-            while (!dq.isEmpty() && dq.peek() < index - windowSize + 1) {
+        while (inputsIndex < len) {
+            while (!dq.isEmpty() && dq.peek() < inputsIndex - windowSize + 1) {
                 sum -= inputs.get(dq.poll());
             }
-
-            dq.addLast(index);
-
-            sum += inputs.get(index);
-
-            if (index >= windowSize - 1) {
+            dq.addLast(inputsIndex);
+            sum += inputs.get(inputsIndex);
+            if (inputsIndex >= windowSize - 1) {
                 float ave = (float) sum / (float) windowSize;
                 DecimalFormat newFormat = new DecimalFormat("#.##");
                 ave =  Float.valueOf(newFormat.format(ave));
-                aveSlidingWindow[i++] = ave;
+                aveSlidingWindow[windowIndex++] = ave;
             }
-
-            index++;
+            inputsIndex++;
         }
 
-        // Now we get the maximum sliding window which stores the index of the maximum number in each window
+        // Now we get the maximum sliding window which stores the inputsIndex of the maximum number in each window
         // And the average sliding window
 
-        /*
-        alert({1, 2, 100, 2, 2}, 3, 1.5)
-
-        maximum sliding window = [2, 2, 2] // stores index, which inputs[2] = 100
-
-        average sliding window = [34.33, 34.67, 34.67]
-        */
-        // We check if the first condition meets
-
-        // Create a hashmap, for each individual maximum index, map it to the average in all windows it appears
-
+        // Create a hashmap, for each individual maximum inputsIndex, map it to the average in all windows it appears
         HashMap<Integer, List<Float>> map = new HashMap<>();
+        inputsIndex = 0;
+        for (;inputsIndex < len - windowSize + 1; inputsIndex++) {
+            int maxInputsIndex = maxSlidingWindow[inputsIndex];
+            float ave = aveSlidingWindow[inputsIndex];
 
-        index = 0;
-
-        for (;index < len - windowSize + 1; index++) {
-            int maxIndex = maxSlidingWindow[index];
-            float ave = aveSlidingWindow[index];
-
-            if (!map.containsKey(maxIndex)) {
-                map.put(maxIndex, new ArrayList<Float>());
-                map.get(maxIndex).add(ave);
+            if (!map.containsKey(maxInputsIndex)) {
+                map.put(maxInputsIndex, new ArrayList<Float>());
+                map.get(maxInputsIndex).add(ave);
             } else {
-                map.get(maxIndex).add(ave);
+                map.get(maxInputsIndex).add(ave);
             }
         }
 
-        for (Integer maxIndex : map.keySet()) {
-            List<Float> aves = map.get(maxIndex);
-            int max = inputs.get(maxIndex);
+        // We check if the first condition meets
+        for (Integer maxInputsIndex : map.keySet()) {
+            List<Float> aves = map.get(maxInputsIndex);
+            int max = inputs.get(maxInputsIndex);
             boolean shouldAlert = true;
-            for (i = 0; i < aves.size(); i++) {
-                float limit = aves.get(i) * allowedIncrease;
-
+            for (windowIndex = 0; windowIndex < aves.size(); windowIndex++) {
+                float limit = aves.get(windowIndex) * allowedIncrease;
                 if (max <= limit) {
                     shouldAlert = false;
                     break;
                 }
             }
-
             if (shouldAlert)
                 return true;
         }
 
+        // Then we check if the second condition meets
         float prevMinAve = aveSlidingWindow[0];
-
-        for (i = 1; i < aveSlidingWindow.length; i++) {
-
+        for (windowIndex = 1; windowIndex < aveSlidingWindow.length; windowIndex++) {
             float limit = prevMinAve * allowedIncrease;
-
-            if (aveSlidingWindow[i] > limit)
+            if (aveSlidingWindow[windowIndex] > limit)
                 return true;
-
-            if (aveSlidingWindow[i] < prevMinAve)
-                prevMinAve = aveSlidingWindow[i];
+            if (aveSlidingWindow[windowIndex] < prevMinAve)
+                prevMinAve = aveSlidingWindow[windowIndex];
         }
         return false;
     }
