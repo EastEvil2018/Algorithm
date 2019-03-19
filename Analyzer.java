@@ -1,5 +1,8 @@
 package Algorithm;
 
+import Algorithm.HackerRank.Mathworks.BuildOfficeSolution.BuildOfficeSolution;
+import Algorithm.HackerRank.Mathworks.MergeStringSolution.MergeStringSolution;
+import Algorithm.HackerRank.Mathworks.SubStringsSolution.SubStringsSolution;
 import Algorithm.HackerRank.WePay.AlerterSolution.AlerterSolution;
 import Algorithm.HackerRank.WePay.NurikabeSolution.NurikabeSolution;
 import Algorithm.HackerRank.WePay.PowerNumberSolution.PowerNumberSolution;
@@ -39,6 +42,7 @@ import Algorithm.LintCode.Sort.HouseRankingSolution.HouseRankingSolution;
 import Algorithm.LintCode.Sort.SortLettersByCaseSolution.SortLettersByCaseSolution;
 import Algorithm.LintCode.Sort.WiggleSort.WiggleSortSolution;
 import Algorithm.Public.Solution.Solution;
+import sun.java2d.pipe.SolidTextRenderer;
 
 import javax.jws.soap.SOAPBinding;
 
@@ -235,9 +239,9 @@ public class Analyzer {
 //
 //        mys.run();
 
-        Solution mys = new AlerterSolution();
-
-        mys.run();
+//        Solution mys = new AlerterSolution();
+//
+//        mys.run();
 
 //        Solution mys = new PowerNumberSolution();
 //
@@ -246,6 +250,15 @@ public class Analyzer {
 //        Solution mys = new NurikabeSolution();
 //
 //        mys.run();
+
+//        Solution mys = new MergeStringSolution();
+//        mys.run();
+
+//        Solution mys = new SubStringsSolution();
+//        mys.run();
+
+        Solution mys = new BuildOfficeSolution();
+        mys.run();
 
     }
 }

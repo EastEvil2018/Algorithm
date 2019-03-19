@@ -100,7 +100,7 @@ public class AlerterSolution extends Solution {
         int len = inputs.size();
         if (len == 0)
             return false;
-        
+
         // we first scan the nums, and get the maximum sliding window,
         // but which stores inputsIndex, because there may be duplicate elements
         int[] maxSlidingWindow = new int[len - windowSize + 1];
