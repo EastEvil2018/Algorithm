@@ -1,6 +1,7 @@
 package Algorithm;
 
 import Algorithm.HackerRank.Mathworks.BuildOfficeSolution.BuildOfficeSolution;
+import Algorithm.HackerRank.Mathworks.CostOfATreeSolution.CostOfATreeSolution;
 import Algorithm.HackerRank.Mathworks.MergeStringSolution.MergeStringSolution;
 import Algorithm.HackerRank.Mathworks.SubStringsSolution.SubStringsSolution;
 import Algorithm.HackerRank.WePay.AlerterSolution.AlerterSolution;
@@ -8,6 +9,7 @@ import Algorithm.HackerRank.WePay.NurikabeSolution.NurikabeSolution;
 import Algorithm.HackerRank.WePay.PowerNumberSolution.PowerNumberSolution;
 import Algorithm.HackerRank.WePay.SlidingWindowAverageSolution.SlidingWindowAverageSolution;
 import Algorithm.HackerRank.WePay.ZombieClusterSolution.ZombieCluserSolution;
+import Algorithm.LeetCode.SegmentTree.LargestRectangleInHistogramSolution.LargestRectangleInHistogramSolution;
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.KthSmallestNumberInSortedMatrixSolution.KthSmallestNumberInSortedMatrixSolution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.MedianOfKSortedArraysSolution.MedianOfKSortedArraysSolution;
@@ -45,6 +47,7 @@ import Algorithm.Public.Solution.Solution;
 import sun.java2d.pipe.SolidTextRenderer;
 
 import javax.jws.soap.SOAPBinding;
+import javax.sound.midi.Soundbank;
 
 public class Analyzer {
 
@@ -257,7 +260,13 @@ public class Analyzer {
 //        Solution mys = new SubStringsSolution();
 //        mys.run();
 
-        Solution mys = new BuildOfficeSolution();
+//        Solution mys = new BuildOfficeSolution();
+//        mys.run();
+
+//        Solution mys = new LargestRectangleInHistogramSolution();
+//        mys.run();
+
+        Solution mys = new CostOfATreeSolution();
         mys.run();
 
     }
