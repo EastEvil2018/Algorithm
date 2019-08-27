@@ -1,0 +1,6 @@
+
+Explanation :
+
+We using a <Integer, List<Pair>> to store a map from a sum to list of pairs, which takes O(n^2) time.
+
+And for each element is sorted array, we traverse, and filter duplicate elements which takes time complexity down.

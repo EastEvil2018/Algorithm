@@ -1,0 +1,14 @@
+
+Explanation :
+
+First Solution : BFS
+
+For each node in Graph, we use BFS to find all the connected nodes, and add it to result.
+
+Remember to use visited Map, to ensure no visited nodes be traversed.
+
+Kind of like Number of Islands.
+
+Second Solution : Union-Find
+
+We will do it later.

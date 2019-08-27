@@ -1,0 +1,28 @@
+
+Explanation :
+
+Using Recursive function, we can split the whole process to subtasks.
+
+For example, if we want to do a problem of 3.
+
+First, move 2 from A to B
+
+Second, move the last one from A to C
+
+Third, move 2 from B to A
+
+That is
+
+move(2, A, B, C)
+
+move(1, A, C, B)
+
+move(2, B, A, C)
+
+For n problem
+
+move(n - 1, A, B, C)
+
+move(1, A, C, B)
+
+move(n - 1, B, A, C)

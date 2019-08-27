@@ -1,0 +1,47 @@
+
+Explanation :
+
+Explanation :
+In this problem, we need a auxilary array to help us.
+For this auxilary array, aux[i][j] stores the sum of all the elements of the square from matrix[0][0] to matrix[i][j]
+
+So, the first step is to construct the auxilary arrat.
+Let us take a simple example to understand the process.
+
+See, the matrix is [1 2 3]
+                   [4 5 6]
+                   [7 8 9]
+
+If we first construct aux[i][j] as the sum of matrix[0][j] to matrix[i][j], e.g, the column sum.
+So the aux is [1   2  3]
+              [5   7  9]
+              [12 15 18]
+
+What is next step?
+Well, let us start from 0 column, obviously, the aux[i][0] is already the sum of all the elements of the square from matrix[0][0] to matrix[i][0]
+What about the second column?
+Well, for the second column, we need to add aux[i][0] + aux[i][1] to let it be the result, right?
+So after that, what about the third column? keep adding aux[i][i] + aux[i][2]
+Well, so we are done with the aux construction, let me do a summary.
+First, record all the elements on the first row of matrix
+Then, do columns sum first, from top to bottom.
+Then, do rows sum, from left to right.
+
+
+After we get the auxilary array, let us see how it looks like
+The aux is now
+[1  3  6]
+[4 12 21]
+[7 27 30]
+
+So given row1, col1, row2, col2, how to compute the range sum in O(1) time?
+Take an example, let us compute(1, 1) to (2, 2);
+let us see aux[2][2], it is the sum from [0][0] to [2][2], obviously we don't need so much
+I will fist let aux[2][2] - aux[0][0], but it still has too much
+let us see what is the "much" part.
+we still have left part as aux[1][0] to aux[2][0] and top part as aux[0][1] to aux[0][2].
+So let us - aux[2][0] - aux[0][2]
+As you notice, we substract aux[0][0] for three times, we need to add them back twice.
+So the result will be aux[2][2] - aux[0][0] - aux[2][0] - aux[0][2] + 2*aux[0][0]
+= aux[2][2] - aux[2][0] - aux[0][2] + aux[0][0]
+That is it.

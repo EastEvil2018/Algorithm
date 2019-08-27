@@ -1,0 +1,12 @@
+
+Explanation :
+
+Well, the interesting things is the challenge for time complexity.
+
+O(k log n) time where n is the bigger one between row size and column size.
+
+Which we can both scan matrix from col or from row.
+
+Since it is a matrix, rowSize == colSize, it works, just take care of col and row in Pack.
+
+And take care of deep copy!

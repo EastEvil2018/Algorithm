@@ -1,0 +1,6 @@
+
+Description :
+
+Given n unique integers, number k (1<=k<=n) and target.
+
+Find all possible k integers where their sum is target.

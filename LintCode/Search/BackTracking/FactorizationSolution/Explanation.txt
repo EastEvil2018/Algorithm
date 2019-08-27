@@ -1,0 +1,25 @@
+
+Explanation :
+
+For this backtracking solution, the first solution we think is :
+
+For (int i = 0; i < n; i++)
+{
+    candidate.add(i);
+
+    dfs();
+
+    candidate.remove(candidate.size() - 1);
+}
+
+But this solution will exceed time limit.
+
+If we notice, for a Integer N, the largest factor it will have will not exceed th Math.sqrt(N).
+
+So we can shrink the loop size here, from n to Math.sqrt(n).
+
+And also, after shrinking the loop size, we do not consider N as the factor.
+
+So we need to add n after the for loop.
+
+Since this is a combination (order important), so we need to add a start in the entry.

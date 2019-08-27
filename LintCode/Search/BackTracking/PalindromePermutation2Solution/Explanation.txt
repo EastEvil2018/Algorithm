@@ -1,0 +1,55 @@
+
+Explanation :
+
+For this problem, the first solution we think about is Brute-Force Solution :
+
+How to do Brute-Force Solution?
+
+Well, easily calculate all the permutations of string s, and check if each String in the return list is palindrome.
+
+But this solution will throw time-limit-exceed.
+
+So can we do some optimization?
+
+Yes, the first question is, does the given string can generate any permutation which is palindrome?
+
+Let us think about it, in which condition the given string do not have any result?
+
+Well, see, "aabcdd", it do not have any result, why?
+
+They have 2 characters which appears odd times in the string.
+
+So, the given string will have result only if
+
+1. Each Unique character only appears even times in the string.
+
+2. Only One Unique character appears odd times in the string, in this case,
+
+this character must be the pivot of the palindrome string.
+
+So we can first using a hashmap to check the possibility of getting any result.
+
+Then, can we do permutation better?
+
+Yes, if we can use half frequency of the appearing characters in the string,
+
+For example, "aabb", we can only permute on "ab".
+
+Get return "ab" "ba"
+
+Then we reverse each one.
+
+"ab" + "ba"
+
+"ba" + "ab"
+
+we get "abba" "baab"
+
+Done.
+
+And get all the permuations of half length of string.
+
+Then, we simply reverse it, append original + pivot(if exists) + reverse.
+
+We can get the palindrome string.
+
