@@ -1,0 +1,4 @@
+
+Explanation :
+
+easy sort, just take care, swap adjacent elements.

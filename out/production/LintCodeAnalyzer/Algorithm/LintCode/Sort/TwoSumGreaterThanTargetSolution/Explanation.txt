@@ -1,0 +1,5 @@
+
+Explanation :
+
+Easy 2-pointers, note that 2-pointers time complexity is O(nLogn), because we need to sort first.
+

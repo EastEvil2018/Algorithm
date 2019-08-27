@@ -1,0 +1,9 @@
+
+Explanation :
+
+Easy as PriorityQueue problem, but just to check the length of whole numbers is odd or even.
+
+If the number is odd, then find the median, return
+
+if the number is even, then find the middle 2 numbers, return (number1) / 2.0 + (number2) / 2.0, avoid overflowing.
+

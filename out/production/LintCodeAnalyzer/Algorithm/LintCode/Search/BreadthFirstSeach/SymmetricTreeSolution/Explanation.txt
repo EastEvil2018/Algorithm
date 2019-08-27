@@ -1,0 +1,6 @@
+
+Explanation :
+
+BFS, check for each level if the tree is symmetric, we use '#' to represent null.
+
+DFS, using a List<List<String>> to store each level nodes, and check for each level if tree is symmetric.

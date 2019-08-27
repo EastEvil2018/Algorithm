@@ -1,0 +1,8 @@
+
+Explanation :
+
+1 : BFS, using a Queue
+
+2 : DFS, First get the depth of the tree, and from 0 to depth, dfs tree, until the dfs get to the given depth,
+
+add the node to result, then, add the whole result to the final result.

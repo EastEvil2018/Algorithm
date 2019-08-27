@@ -1,0 +1,13 @@
+
+Explanation :
+
+For this problem, we need to use prefix tree and dfs
+Why we use prefix tree?
+Because when we insert word into squares, for example,
+The result is [b a l l]
+              [a r e a]
+What is the next word prefix? we can decide the first 2 char right?
+Follow the rule, the first 2 char of the third word is "l e"
+So for ith row, we just need to the append all the ith char from the previous
+words, and use it as a prefix to search in the prefix tree, then we get all the
+candidates, then dfs, problem sovled.

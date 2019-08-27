@@ -1,0 +1,5 @@
+
+Explanation :
+
+Easy BFS Search, the given graph actually do not have any use.
+

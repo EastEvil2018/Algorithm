@@ -1,0 +1,11 @@
+
+Explanation :
+
+First Solution : BFS.
+
+In here we need to create a custom Node class including steps,
+
+and using a global variable minStep to remember the minStep result.
+
+BFS is easy, but I think DFS will also work, except for time limit.
+
