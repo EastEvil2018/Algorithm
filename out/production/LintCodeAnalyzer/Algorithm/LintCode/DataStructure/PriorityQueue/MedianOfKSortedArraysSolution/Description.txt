@@ -1,6 +1,0 @@
-
-Description :
-
-There are k sorted arrays nums.
-
-Find the median of the given k sorted arrays.

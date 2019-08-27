@@ -1,9 +1,12 @@
 package Algorithm;
 
+import Algorithm.Amazon.FindSubstringsOfSizeKWithKDistinctCharactersSolution.FindSubstringsOfSizeKWithDistinctCharactersSolution;
+import Algorithm.Amazon.MostCommonWordsSolution.MostCommonWordsSolution;
 import Algorithm.HackerRank.Mathworks.BuildOfficeSolution.BuildOfficeSolution;
 import Algorithm.HackerRank.Mathworks.CostOfATreeSolution.CostOfATreeSolution;
 import Algorithm.HackerRank.Mathworks.MergeStringSolution.MergeStringSolution;
 import Algorithm.HackerRank.Mathworks.SubStringsSolution.SubStringsSolution;
+import Algorithm.HackerRank.RStar.DistancesFromCapitalSolution.DistancesFromCapitalSolution;
 import Algorithm.HackerRank.WePay.AlerterSolution.AlerterSolution;
 import Algorithm.HackerRank.WePay.NurikabeSolution.NurikabeSolution;
 import Algorithm.HackerRank.WePay.PowerNumberSolution.PowerNumberSolution;
@@ -266,7 +269,14 @@ public class Analyzer {
 //        Solution mys = new LargestRectangleInHistogramSolution();
 //        mys.run();
 
-        Solution mys = new CostOfATreeSolution();
+//        Solution mys = new CostOfATreeSolution();
+//        mys.run();
+//        Solution mys = new DistancesFromCapitalSolution();
+//        mys.run();
+
+//        Solution mys = new FindSubstringsOfSizeKWithDistinctCharactersSolution();
+//        mys.run();
+        Solution mys = new MostCommonWordsSolution();
         mys.run();
 
     }

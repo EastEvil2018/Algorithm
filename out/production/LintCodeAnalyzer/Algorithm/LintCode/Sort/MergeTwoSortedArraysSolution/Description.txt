@@ -1,5 +1,0 @@
-
-Description :
-
-Merge two given sorted integer array A and B into a new sorted integer array.
-

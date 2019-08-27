@@ -1,4 +1,0 @@
-
-Description :
-
-Visualize the process of N Hanoi problem.

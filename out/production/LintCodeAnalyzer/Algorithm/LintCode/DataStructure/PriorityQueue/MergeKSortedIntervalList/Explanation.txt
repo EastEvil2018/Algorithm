@@ -1,8 +1,0 @@
-
-Explanation :
-
-Same As Merge K Sorted Arrays, we will do another implementation after.
-
-This is brute-force.
-
-The better solution is Keep a K-sized PriorityQueue, same as MergeKSortedArraySolution

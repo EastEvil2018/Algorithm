@@ -1,4 +1,0 @@
-
-Explanation :
-
-O(n), easy 2-pointers, since it has serveral results.

@@ -1,5 +1,0 @@
-
-Explanation :
-
-BFS Solution, using all 0s as the start, when it reaches any room, replace the room with the distance.
-

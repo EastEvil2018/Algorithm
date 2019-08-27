@@ -1,5 +1,0 @@
-
-Description :
-
-Given a Number N, return all the factorization combination as the list of integer list.
-

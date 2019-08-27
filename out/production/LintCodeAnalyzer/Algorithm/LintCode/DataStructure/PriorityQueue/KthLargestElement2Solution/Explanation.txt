@@ -1,5 +1,0 @@
-
-Explanation :
-
-Find K-th largest element in an array. and N is much larger than k.
-

@@ -1,6 +1,0 @@
-
-Explanation :
-
-Since for each id, we have multiple scores, so for each id, we need to record highest 5 scores.
-
-Which is similar to TopKLargestNumber, and we can create a HashMap<ID, Queue> to solve this problem.

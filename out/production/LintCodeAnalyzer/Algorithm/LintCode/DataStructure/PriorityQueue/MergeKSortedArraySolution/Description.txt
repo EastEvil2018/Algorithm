@@ -1,5 +1,0 @@
-
-Description :
-
-Given k sorted integer arrays, merge them into one sorted array.
-

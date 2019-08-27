@@ -1,6 +1,0 @@
-
-Explanation :
-
-Easy, PriorityQueue problem, just remember to implement topk() problem,
-
-after poll() k numbers, add them back.

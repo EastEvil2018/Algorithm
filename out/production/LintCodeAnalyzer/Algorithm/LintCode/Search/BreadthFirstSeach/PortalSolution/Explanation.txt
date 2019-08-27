@@ -1,4 +1,0 @@
-
-Explanation :
-
-BFS Solution. remember to check if she cannot leave the maze.

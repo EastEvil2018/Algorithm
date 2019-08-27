@@ -1,9 +1,0 @@
-
-Explanation :
-
-The only different things from Maze Problem, it now needs to get the distance.
-
-Well, we add a variable to Node to record the steps till now.
-
-Then use BFS, take care of steps.
-

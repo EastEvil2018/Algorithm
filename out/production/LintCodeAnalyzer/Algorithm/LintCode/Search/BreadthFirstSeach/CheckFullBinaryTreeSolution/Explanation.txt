@@ -1,5 +1,0 @@
-
-Explanation :
-
-BFS Solution, For each level, check for current level if the tree is full.
-
