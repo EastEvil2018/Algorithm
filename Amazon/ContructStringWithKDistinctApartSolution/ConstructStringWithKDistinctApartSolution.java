@@ -3,6 +3,10 @@ package Algorithm.Amazon.ContructStringWithKDistinctApartSolution;
 import Algorithm.Public.Solution.Solution;
 import Algorithm.Public.Utills.PrintUtills;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
+
 public class ConstructStringWithKDistinctApartSolution extends Solution {
 
     @Override
@@ -26,36 +30,44 @@ public class ConstructStringWithKDistinctApartSolution extends Solution {
 
         StringBuilder sb = new StringBuilder();
 
-        int[] valid = new int[3];
+        HashMap<Character, Integer> map = new HashMap<>();
 
-        int maxLength = nums[0] + nums[1] + nums[2];
-        for (int i = 0; i < maxLength; i++) {
-            int corresIndex = this.findIndex(nums, valid, i);
-            if (corresIndex == -1)
-                return sb.toString();
+        map.put('a', nums[0]);
+        map.put('b', nums[1]);
+        map.put('c', nums[2]);
 
-            sb.append((char)('a' + corresIndex));
-            nums[corresIndex]--;
-            valid[corresIndex] = i + k;
+        PriorityQueue<Map.Entry<Character, Integer>> pq
+                = new PriorityQueue<>(11, (a, b) -> (b.getValue() - a.getValue()));
+
+        pq.addAll(map.entrySet());
+
+        int len = nums[0] + nums[1] + nums[2];
+
+        Map.Entry<Character, Integer> onHold = null;
+
+        while (!pq.isEmpty()) {
+            Map.Entry<Character, Integer> cur = pq.poll();
+
+            sb.append(cur.getKey());
+
+
+            if (onHold != null) {
+                pq.add(onHold);
+                onHold = null;
+            }
+
+            if (cur.getValue() > 1) {
+                cur.setValue(cur.getValue() - 1);
+
+                if (sb.length() >= (k - 1) && sb.charAt(sb.length() - (k - 1)) == cur.getKey()) {
+                    onHold = cur;
+                } else {
+                    pq.add(cur);
+                }
+            }
         }
 
         return sb.toString();
     }
 
-    private int findIndex(int[] nums, int[] valid, int index) {
-
-        int max = Integer.MIN_VALUE;
-        int res = -1;
-
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] > 0 && valid[i] <= index) {
-                if (nums[i] > max) {
-                    max = nums[i];
-                    res = i;
-                }
-
-            }
-        }
-        return res;
-    }
 }
