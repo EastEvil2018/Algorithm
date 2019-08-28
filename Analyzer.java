@@ -1,5 +1,6 @@
 package Algorithm;
 
+import Algorithm.Amazon.ContructStringWithKDistinctApartSolution.ConstructStringWithKDistinctApartSolution;
 import Algorithm.Amazon.FindSubstringsOfSizeKWithKDistinctCharactersSolution.FindSubstringsOfSizeKWithDistinctCharactersSolution;
 import Algorithm.Amazon.MostCommonWordsSolution.MostCommonWordsSolution;
 import Algorithm.HackerRank.Mathworks.BuildOfficeSolution.BuildOfficeSolution;
@@ -276,7 +277,9 @@ public class Analyzer {
 
 //        Solution mys = new FindSubstringsOfSizeKWithDistinctCharactersSolution();
 //        mys.run();
-        Solution mys = new MostCommonWordsSolution();
+//        Solution mys = new MostCommonWordsSolution();
+//        mys.run();
+        Solution mys = new ConstructStringWithKDistinctApartSolution();
         mys.run();
 
     }
