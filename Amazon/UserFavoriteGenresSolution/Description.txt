@@ -1,0 +1,45 @@
+Given a map Map<String, List> userMap, where the key is a username and the value is a list of user’s songs.
+Also given a map Map<String, List> genreMap, where the key is a genre and the value is a list of songs belonging to this genre.
+The task is to return a map Map<String, List>, where the key is a username and the value is a list of the user’s favorite genres.
+
+Example 1:
+
+Input:
+userMap = {
+“David”: [“song1”, “song2”, “song3”, “song4”, “song8”],
+“Emma”: [“song5”, “song6”, “song7”]
+},
+genreMap = {
+“Rock”: [“song1”, “song3”],
+“Dubstep”: [“song7”],
+“Techno”: [“song2”, “song4”],
+“Pop”: [“song5”, “song6”],
+“Jazz”: [“song8”, “song9”]
+}
+
+Output: {
+“David”: [“Rock”, “Techno”],
+“Emma”: [“Pop”]
+}
+
+Example 2:
+
+Input:
+userMap = {
+“David”: [“song1”, “song2”],
+“Emma”: [“song3”, “song4”]
+},
+genreMap = {}
+
+Output: {
+“David”: [],
+“Emma”: []
+}
+
+We can pre-compute the genres associated with song and create a songToGenresMap of type Map<String, List> where the key is a song and the value is a list of genres that the song satisfies.
+
+Then, the statement reduces to:
+
+Iterate over each entry in the usersMap
+For each entry in the favoriteSongs list, get the genres from songToGenresMap and add genre to a genre Set associated to the user.
+If all songs have been streamed, make a new entry to the output Map after converting the set of genres to a map

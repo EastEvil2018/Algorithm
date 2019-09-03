@@ -3,6 +3,7 @@ package Algorithm.Public.Utills;
 import Algorithm.Public.DataStructure.Interval;
 import Algorithm.Public.DataStructure.Node;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class PrintUtills {
@@ -241,6 +242,20 @@ public class PrintUtills {
 
         System.out.print("]\n");
 
+    }
+
+    public static void printStringToStringListMap(HashMap<String, List<String>> map) {
+        int size = map.size();
+
+        if (size == 0)
+            return;
+
+        System.out.println("The String To StringList HashMap is printed below : ");
+
+        for (String key : map.keySet()) {
+            System.out.print(key + " -> ");
+            PrintUtills.printStringList(map.get(key));
+        }
     }
 
 

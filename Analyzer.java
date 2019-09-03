@@ -1,8 +1,17 @@
 package Algorithm;
 
 import Algorithm.Amazon.ContructStringWithKDistinctApartSolution.ConstructStringWithKDistinctApartSolution;
+import Algorithm.Amazon.CriticalConnectionSolution.CriticalConnectionSolution;
 import Algorithm.Amazon.FindSubstringsOfSizeKWithKDistinctCharactersSolution.FindSubstringsOfSizeKWithDistinctCharactersSolution;
+import Algorithm.Amazon.LongestStringMadeUpOfOnlyVowelsSolution.LongestStringMadeUpOfOnlyVowelsSolution;
+import Algorithm.Amazon.MinCostToConnectAllNodesSolution.MinCostToConnectAllNodesSolution;
+import Algorithm.Amazon.MinCostToRepairEdgesSolution.MinCostToRepairEdgesSolution;
 import Algorithm.Amazon.MostCommonWordsSolution.MostCommonWordsSolution;
+import Algorithm.Amazon.RollDiceSolution.RollDiceSolution;
+import Algorithm.Amazon.ShippingRoutesSolution.ShippingRoutesSolution;
+import Algorithm.Amazon.ShopkeeperSaleSolution.ShopkeeperSaleSolution;
+import Algorithm.Amazon.SortCenterSolution.SortCenterSolution;
+import Algorithm.Amazon.UserFavoriteGenresSolution.UserFavoriteGenresSolution;
 import Algorithm.HackerRank.Mathworks.BuildOfficeSolution.BuildOfficeSolution;
 import Algorithm.HackerRank.Mathworks.CostOfATreeSolution.CostOfATreeSolution;
 import Algorithm.HackerRank.Mathworks.MergeStringSolution.MergeStringSolution;
@@ -279,7 +288,28 @@ public class Analyzer {
 //        mys.run();
 //        Solution mys = new MostCommonWordsSolution();
 //        mys.run();
-        Solution mys = new ConstructStringWithKDistinctApartSolution();
+//        Solution mys = new ConstructStringWithKDistinctApartSolution();
+//        mys.run();
+//        Solution mys = new SortCenterSolution();
+//        mys.run();
+//        Solution mys = new RollDiceSolution();
+//        mys.run();
+//        Solution mys = new ShippingRoutesSolution();
+//        mys.run();
+//        Solution mys = new MinCostToConnectAllNodesSolution();
+//        mys.run();
+//
+//        Solution mys = new MinCostToRepairEdgesSolution();
+//        mys.run();
+//        Solution mys = new ShopkeeperSaleSolution();
+//        mys.run();
+//        Solution mys = new LongestStringMadeUpOfOnlyVowelsSolution();
+//        mys.run();
+//
+//        Solution mys = new CriticalConnectionSolution();
+//        mys.run();
+
+        Solution mys = new UserFavoriteGenresSolution();
         mys.run();
 
     }

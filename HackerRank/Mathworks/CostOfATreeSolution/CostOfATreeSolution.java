@@ -105,7 +105,7 @@ dp[i][j] = Math.min(dp[i][j], dp[k + 1][j] + inputs[k] * max[k + 1][j]);
 public class CostOfATreeSolution extends Solution {
     @Override
     public void test() {
-        int[] testcase1 = new int[]{4, 6, 2};
+        int[] testcase1 = new int[]{6, 2, 4};
         Assert.assertTrue(costOfATree(testcase1) == 36);
     }
 
@@ -141,7 +141,7 @@ public class CostOfATreeSolution extends Solution {
         for (int i = len - 2; i >= 1; i--) {
             for (int j = i + 1; j < len + 1; j++) {
                 for (int k = i; k <= j; k++) {
-                    if (k == 0)
+                    if (k == i)
                         cost[i][k - 1] = 0;
                     if (k == j)
                         cost[k + 1][j] = 0;
