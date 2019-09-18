@@ -57,6 +57,10 @@ import Algorithm.LintCode.Sort.HouseRankingSolution.HouseRankingSolution;
 import Algorithm.LintCode.Sort.SortLettersByCaseSolution.SortLettersByCaseSolution;
 import Algorithm.LintCode.Sort.WiggleSort.WiggleSortSolution;
 import Algorithm.Public.Solution.Solution;
+import Algorithm.SAP.BrilliantBingoSolution.BrilliantBingoSolution;
+import Algorithm.SAP.GardonCutSolution.GardonCutSolution;
+import Algorithm.SAP.PrimeNumberDecodeMessageSolution.PrimeNumberDecodeMessageSolution;
+import Algorithm.SAP.TwoDimensionalPatternSolution.TwoDimensionalPatternSolution;
 import sun.java2d.pipe.SolidTextRenderer;
 
 import javax.jws.soap.SOAPBinding;
@@ -309,7 +313,19 @@ public class Analyzer {
 //        Solution mys = new CriticalConnectionSolution();
 //        mys.run();
 
-        Solution mys = new UserFavoriteGenresSolution();
+//        Solution mys = new UserFavoriteGenresSolution();
+//        mys.run();
+
+//        Solution mys = new PrimeNumberDecodeMessageSolution();
+//        mys.run();
+
+//        Solution mys = new TwoDimensionalPatternSolution();
+//        mys.run();
+
+//        Solution mys = new BrilliantBingoSolution();
+//        mys.run();
+
+        Solution mys = new GardonCutSolution();
         mys.run();
 
     }
