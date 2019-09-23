@@ -126,10 +126,10 @@ public class PrintUtills {
 
     public static void printStringList(List<String> stringList) {
 
-        System.out.print("[ ");
+        System.out.println("[ ");
 
         for (int i = 0; i < stringList.size(); i++) {
-            System.out.print(stringList.get(i) + " ");
+            System.out.println("\"" + stringList.get(i) + "\"");
         }
 
         System.out.print("]\n");

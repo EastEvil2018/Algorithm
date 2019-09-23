@@ -12,6 +12,7 @@ import Algorithm.Amazon.ShippingRoutesSolution.ShippingRoutesSolution;
 import Algorithm.Amazon.ShopkeeperSaleSolution.ShopkeeperSaleSolution;
 import Algorithm.Amazon.SortCenterSolution.SortCenterSolution;
 import Algorithm.Amazon.UserFavoriteGenresSolution.UserFavoriteGenresSolution;
+import Algorithm.Clutter.BeforeAndAfterPuzzleSolution.BeforeAndAfterPuzzleSolution;
 import Algorithm.HackerRank.Mathworks.BuildOfficeSolution.BuildOfficeSolution;
 import Algorithm.HackerRank.Mathworks.CostOfATreeSolution.CostOfATreeSolution;
 import Algorithm.HackerRank.Mathworks.MergeStringSolution.MergeStringSolution;
@@ -325,7 +326,9 @@ public class Analyzer {
 //        Solution mys = new BrilliantBingoSolution();
 //        mys.run();
 
-        Solution mys = new GardonCutSolution();
+//        Solution mys = new GardonCutSolution();
+//        mys.run();
+        Solution mys = new BeforeAndAfterPuzzleSolution();
         mys.run();
 
     }
