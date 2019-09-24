@@ -13,6 +13,8 @@ import Algorithm.Amazon.ShopkeeperSaleSolution.ShopkeeperSaleSolution;
 import Algorithm.Amazon.SortCenterSolution.SortCenterSolution;
 import Algorithm.Amazon.UserFavoriteGenresSolution.UserFavoriteGenresSolution;
 import Algorithm.Clutter.BeforeAndAfterPuzzleSolution.BeforeAndAfterPuzzleSolution;
+import Algorithm.Google.PizzaShopSolution.PizzaShopSolution;
+import Algorithm.Google.WateringFlowersSolution.WateringFlowersSolution;
 import Algorithm.HackerRank.Mathworks.BuildOfficeSolution.BuildOfficeSolution;
 import Algorithm.HackerRank.Mathworks.CostOfATreeSolution.CostOfATreeSolution;
 import Algorithm.HackerRank.Mathworks.MergeStringSolution.MergeStringSolution;
@@ -328,7 +330,14 @@ public class Analyzer {
 
 //        Solution mys = new GardonCutSolution();
 //        mys.run();
-        Solution mys = new BeforeAndAfterPuzzleSolution();
+
+//        Solution mys = new BeforeAndAfterPuzzleSolution();
+//        mys.run();
+
+//        Solution mys = new WateringFlowersSolution();
+//        mys.run();
+
+        Solution mys = new PizzaShopSolution();
         mys.run();
 
     }
