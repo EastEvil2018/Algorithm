@@ -13,6 +13,7 @@ import Algorithm.Amazon.ShopkeeperSaleSolution.ShopkeeperSaleSolution;
 import Algorithm.Amazon.SortCenterSolution.SortCenterSolution;
 import Algorithm.Amazon.UserFavoriteGenresSolution.UserFavoriteGenresSolution;
 import Algorithm.Clutter.BeforeAndAfterPuzzleSolution.BeforeAndAfterPuzzleSolution;
+import Algorithm.CodeSignal.ArrayQuerySolution.ArrayQuerySolution;
 import Algorithm.Google.MinAbsDifferenceOfServerLoadsSolution.MinAbsDifferenceOfServerLoadsSolution;
 import Algorithm.Google.PizzaShopSolution.PizzaShopSolution;
 import Algorithm.Google.WateringFlowersSolution.WateringFlowersSolution;
@@ -26,6 +27,7 @@ import Algorithm.HackerRank.WePay.NurikabeSolution.NurikabeSolution;
 import Algorithm.HackerRank.WePay.PowerNumberSolution.PowerNumberSolution;
 import Algorithm.HackerRank.WePay.SlidingWindowAverageSolution.SlidingWindowAverageSolution;
 import Algorithm.HackerRank.WePay.ZombieClusterSolution.ZombieCluserSolution;
+import Algorithm.IBM.CompressStringSolution.CompressStringSolution;
 import Algorithm.LeetCode.SegmentTree.LargestRectangleInHistogramSolution.LargestRectangleInHistogramSolution;
 import Algorithm.LintCode.DataStructure.LinkedList.DeleteGreaterNodesSolution.DeleteGreaterNodesSolution;
 import Algorithm.LintCode.DataStructure.PriorityQueue.KthSmallestNumberInSortedMatrixSolution.KthSmallestNumberInSortedMatrixSolution;
@@ -341,7 +343,12 @@ public class Analyzer {
 //        Solution mys = new PizzaShopSolution();
 //        mys.run();
 
-        Solution mys = new MinAbsDifferenceOfServerLoadsSolution();
+//        Solution mys = new MinAbsDifferenceOfServerLoadsSolution();
+//        mys.run();
+
+//        Solution mys = new CompressStringSolution();
+//        mys.run();
+        Solution mys = new ArrayQuerySolution();
         mys.run();
 
     }
