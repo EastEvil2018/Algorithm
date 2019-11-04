@@ -12,6 +12,7 @@ import Algorithm.Amazon.ShippingRoutesSolution.ShippingRoutesSolution;
 import Algorithm.Amazon.ShopkeeperSaleSolution.ShopkeeperSaleSolution;
 import Algorithm.Amazon.SortCenterSolution.SortCenterSolution;
 import Algorithm.Amazon.UserFavoriteGenresSolution.UserFavoriteGenresSolution;
+import Algorithm.AppFolio.ValidStrongPasswordSolution.ValidStrongPasswordSolution;
 import Algorithm.Clutter.BeforeAndAfterPuzzleSolution.BeforeAndAfterPuzzleSolution;
 import Algorithm.CodeSignal.ArrayQuerySolution.ArrayQuerySolution;
 import Algorithm.Google.MinAbsDifferenceOfServerLoadsSolution.MinAbsDifferenceOfServerLoadsSolution;
@@ -348,7 +349,9 @@ public class Analyzer {
 
 //        Solution mys = new CompressStringSolution();
 //        mys.run();
-        Solution mys = new ArrayQuerySolution();
+//        Solution mys = new ArrayQuerySolution();
+//        mys.run();
+        Solution mys = new ValidStrongPasswordSolution();
         mys.run();
 
     }
