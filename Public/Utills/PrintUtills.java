@@ -258,5 +258,18 @@ public class PrintUtills {
         }
     }
 
+    public static void printListOfIntArray(List<int[]> list) {
+        int size = list.size();
+
+        if (size == 0)
+            return;
+
+        System.out.println("The List Of Int Array is printed below : ");
+
+        for (int[] array : list) {
+            PrintUtills.printIntArray(array);
+        }
+    }
+
 
 }

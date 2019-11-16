@@ -14,6 +14,7 @@ import Algorithm.Amazon.SortCenterSolution.SortCenterSolution;
 import Algorithm.Amazon.UserFavoriteGenresSolution.UserFavoriteGenresSolution;
 import Algorithm.AppFolio.ClockDirectionSolution.ClockDirectionSolution;
 import Algorithm.AppFolio.MoveTargetInArraySolution.MoveTargetInArraySolution;
+import Algorithm.AppFolio.MyCalendarSolution.MyCalendarSolution;
 import Algorithm.AppFolio.NintyNineBottlesOfBeerSolution.NintyNineBottlesOfBeerSolution;
 import Algorithm.AppFolio.ValidStrongPasswordSolution.ValidStrongPasswordSolution;
 import Algorithm.Clutter.BeforeAndAfterPuzzleSolution.BeforeAndAfterPuzzleSolution;
@@ -361,7 +362,10 @@ public class Analyzer {
 
 //        Solution mys = new ClockDirectionSolution();
 //        mys.run();
-        Solution mys = new MoveTargetInArraySolution();
+//        Solution mys = new MoveTargetInArraySolution();
+//        mys.run();
+
+        Solution mys = new MyCalendarSolution();
         mys.run();
     }
 }
